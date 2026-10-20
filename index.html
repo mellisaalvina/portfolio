@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Mellisa Alvina — digital marketer. Live Meta & Google Ads, tracking, CRM, SEO and analytics case studies.">
+<meta property="og:title" content="Mellisa Alvina · Digital Marketing Portfolio">
+<meta property="og:description" content="Live Meta & Google Ads, tracking fixes, CRM journeys, SEO and analytics — 20 case studies with real numbers.">
+<meta property="og:image" content="img--r--avatar.jpg">
+<link rel="icon" href="img--r--avatar.jpg">
+<title>Mellisa Alvina Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,100;1,9..144,400..600,100&family=Barlow+Condensed:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: botanical paper notebook — arched hero, logo marquee, bento showcase for the featured brand, filterable case-study cards that open into device-framed detail views */
+:root{
+  --paper:#F5F3EE; --paper-2:#ECE8DF; --card:#FFFDF9; --line:#DDD6C8;
+  --ink:#222A4A; --ink-soft:#4B5272; --muted:#6B7090;
+  --peri:#5465A8; --peri-soft:#DCE1F3; --butter:#F2C64E; --butter-soft:#FBEEC4;
+  --sage:#5E8259; --sage-soft:#DCE6D7; --blush:#D9836C; --teal:#00544D;
+  --deep:#222A4A; --on-deep:#F3F1EA; --on-deep-soft:#BFC4DB; --tile:#FFFFFF;
+  --shadow:0 18px 40px rgba(34,42,74,.12);
+  --f-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --f-label:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#161A2C; --paper-2:#1D2238; --card:#20263F; --line:#323A5C;
+  --ink:#EEEDF5; --ink-soft:#C9CCE0; --muted:#9CA2C2;
+  --peri:#9DAAEC; --peri-soft:#2B3360; --butter:#F2C64E; --butter-soft:#4A4126;
+  --sage:#A3C29E; --sage-soft:#26362A; --blush:#E8A18D; --teal:#5FC2B6;
+  --deep:#0F1222; --on-deep:#F3F1EA; --on-deep-soft:#BFC4DB; --tile:#F7F5F0;
+  --shadow:0 18px 40px rgba(0,0,0,.35); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#161A2C; --paper-2:#1D2238; --card:#20263F; --line:#323A5C;
+  --ink:#EEEDF5; --ink-soft:#C9CCE0; --muted:#9CA2C2;
+  --peri:#9DAAEC; --peri-soft:#2B3360; --butter:#F2C64E; --butter-soft:#4A4126;
+  --sage:#A3C29E; --sage-soft:#26362A; --blush:#E8A18D; --teal:#5FC2B6;
+  --deep:#0F1222; --on-deep:#F3F1EA; --on-deep-soft:#BFC4DB; --tile:#F7F5F0;
+  --shadow:0 18px 40px rgba(0,0,0,.35); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;margin:0;
+  background-image:radial-gradient(circle at 1px 1px, color-mix(in srgb,var(--ink) 6%,transparent) 1px, transparent 0);background-size:22px 22px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+a{color:var(--peri)}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--f-display);font-variation-settings:"SOFT" 100;text-wrap:balance;margin:0;line-height:1.08;font-weight:600}
+p{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:96px;overflow-x:clip}
+.eyebrow{font-family:var(--f-label);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:15px;color:var(--peri)}
+.sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:44px;max-width:740px}
+.sec-head h2{font-size:clamp(36px,5vw,58px)}
+.sec-head p{color:var(--ink-soft);font-size:18px}
+:focus-visible{outline:3px solid var(--butter);outline-offset:3px;border-radius:6px}
+.grid2>*,.about-grid>*,.hero .wrap>*,.bento>*{min-width:0}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:18px;height:64px}
+.brand{font-family:var(--f-display);font-weight:600;font-size:22px;color:var(--ink);text-decoration:none;display:flex;gap:10px;align-items:center;white-space:nowrap}
+.brand .dot{width:30px;height:30px;border-radius:50%;background:var(--butter);display:grid;place-items:center;font-size:14px;color:#222A4A;font-family:var(--f-label);font-weight:700}
+.nav ul{display:flex;gap:2px;list-style:none;margin:0 0 0 auto;padding:0}
+.nav ul a{font-family:var(--f-label);font-weight:600;font-size:17px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;padding:8px 12px;border-radius:999px}
+.nav ul a:hover,.nav ul a.on{background:var(--peri-soft);color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-label);font-weight:600;font-size:18px;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:12px 22px;border:2px solid var(--ink);text-decoration:none;cursor:pointer;background:transparent;color:var(--ink);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.butter{background:var(--butter);border-color:var(--butter);color:#222A4A}
+.theme-btn{border:1px solid var(--line);background:var(--card);color:var(--ink);width:40px;height:40px;border-radius:50%;cursor:pointer;display:grid;place-items:center;flex:none}
+@media (max-width:900px){.nav ul{display:none}.nav .cta{margin-left:auto}}
+
+/* hero */
+.hero{padding-block:56px 64px;position:relative;overflow-x:clip}
+.hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(54px,8vw,104px);letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--peri)}
+.rotator{font-family:var(--f-display);font-size:clamp(22px,2.6vw,30px);color:var(--ink-soft);margin-top:18px;font-weight:400}
+.rotator b{color:var(--ink);font-weight:600;background:linear-gradient(transparent 62%,var(--butter-soft) 62%);padding:0 4px;display:inline-block;transition:opacity .3s,transform .3s}
+.rotator b.swap{opacity:0;transform:translateY(8px)}
+.hero .lede{margin-top:20px;max-width:560px;color:var(--ink-soft);font-size:18.5px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.contact-row{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;font-size:15.5px}
+.contact-row span,.contact-row a{display:inline-flex;gap:8px;align-items:center;color:var(--ink-soft);text-decoration:none}
+.portrait{position:relative;justify-self:center;width:min(400px,100%)}
+.arch{aspect-ratio:4/5;border-radius:220px 220px 22px 22px;background:linear-gradient(160deg,var(--peri-soft),var(--butter-soft));border:2px solid var(--peri);position:relative;overflow:hidden;display:grid;place-items:center;max-width:100%}
+.arch .mono{font-family:var(--f-display);font-size:150px;font-weight:600;color:var(--peri);font-style:italic;font-variation-settings:"SOFT" 100;line-height:1}
+.arch .sub{position:absolute;bottom:26px;left:0;right:0;text-align:center;font-family:var(--f-label);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;font-size:15px}
+.arch .photo{width:68%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid var(--card);box-shadow:0 18px 40px rgba(20,24,42,.22);margin-bottom:0}
+.arch .photo img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
+.sticker{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 14px;box-shadow:var(--shadow);display:flex;gap:10px;align-items:center;font-size:14.5px;line-height:1.25;max-width:230px;animation:float 6s ease-in-out infinite;color:var(--ink-soft)}
+.sticker b{font-family:var(--f-display);font-size:23px;display:block;color:var(--ink)}
+.sticker .ic{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:none;font-family:var(--f-label);font-weight:700;font-size:15px}
+.s1{top:6%;left:-16%}.s2{top:66%;right:-14%;animation-delay:-2s}.s3{bottom:-5%;left:-10%;animation-delay:-4s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.sprig{position:absolute;pointer-events:none;color:var(--sage);opacity:.85}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.portrait{width:min(330px,82%)}.s1{left:-8%}.s2{right:-8%}.s3{left:-4%}}
+
+
+/* impact band */
+.impact{background:var(--deep);color:var(--on-deep);padding-block:70px 76px;position:relative;overflow:hidden}
+.impact::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(242,198,78,.18),transparent 70%);right:-160px;top:-200px;pointer-events:none}
+.imp-head h2{color:var(--on-deep);font-size:clamp(32px,4.4vw,52px);margin-top:10px;max-width:820px}
+.imp-sub{color:var(--on-deep-soft);margin-top:14px;font-size:16.5px}
+.imp-sub b{color:var(--butter);font-weight:700}
+.imp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.imp{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:8px;padding:24px 24px 20px;border-radius:22px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);transition:transform .2s,background .2s,border-color .2s;min-width:0}
+.imp:hover,.imp:focus-visible{transform:translateY(-4px);background:rgba(255,255,255,.09);border-color:var(--butter)}
+.imp:focus-visible{outline:2px solid var(--butter);outline-offset:3px}
+.imp .tag{font-family:var(--f-label);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:13.5px;color:var(--on-deep-soft)}
+.imp b{font-family:var(--f-display);font-size:clamp(44px,5.4vw,66px);line-height:1;color:var(--butter);font-variant-numeric:tabular-nums;font-weight:600}
+.imp .lbl{color:var(--on-deep);font-size:15.5px;line-height:1.45}
+.imp .go{margin-top:auto;padding-top:10px;font-family:var(--f-label);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:14px;color:var(--butter);opacity:.75;transition:opacity .2s}
+.imp:hover .go{opacity:1}
+.imp.hl{background:var(--butter);border-color:var(--butter)}
+.imp.hl b,.imp.hl .lbl,.imp.hl .go{color:#222A4A}.imp.hl .tag{color:#5A4A1A}
+@media (max-width:900px){.imp-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.imp-grid{grid-template-columns:1fr 1fr;gap:10px}.imp{padding:16px 14px 14px;gap:6px;border-radius:18px}.imp b{font-size:34px}.imp .lbl{font-size:13.5px}.imp .tag{font-size:11.5px}.imp .go{font-size:12px}.impact{padding-block:52px 56px}.nav .cta{display:none}.nav .theme-btn{margin-left:auto}
+.hero .portrait{order:-1;width:min(260px,72%)}.hero .wrap{gap:30px}.hero>.sprig{display:none}.s1{left:-14%;top:2%}.s2{right:-18%}.s3{left:-12%}.sticker{padding:7px 10px;font-size:12.5px}.sticker b{font-size:18px}.sticker .ic{width:30px;height:30px;font-size:12.5px}}
+/* open-to-work */
+.otw{display:inline-flex;align-items:center;gap:8px;background:var(--sage-soft);color:var(--ink);border-radius:999px;padding:6px 14px 6px 10px;font-size:14.5px;font-weight:600;margin-bottom:16px}
+.otw i{width:9px;height:9px;border-radius:50%;background:#2E9E5B;box-shadow:0 0 0 0 rgba(46,158,91,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,158,91,.55)}70%{box-shadow:0 0 0 9px rgba(46,158,91,0)}100%{box-shadow:0 0 0 0 rgba(46,158,91,0)}}
+/* progress + reveal */
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--peri),var(--butter));z-index:60;pointer-events:none}
+html.rv-on .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+html.rv-on .rv.in{opacity:1;transform:none}
+/* card affordance */
+.card .go{font-family:var(--f-label);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:13.5px;color:var(--peri);margin-left:auto;opacity:0;transform:translateX(-6px);transition:.2s;white-space:nowrap;align-self:center}
+.card:hover .go,.card:focus-visible .go{opacity:1;transform:none}
+@media (hover:none){.card .go{opacity:1;transform:none}}
+.chip .n{opacity:.6;margin-left:4px}
+@media (prefers-reduced-motion:reduce){html.rv-on .rv{opacity:1;transform:none;transition:none}.otw i{animation:none}}
+/* logo marquee */
+.marquee{border-block:1px solid var(--line);background:var(--card);padding-block:18px;overflow:hidden;position:relative}
+.marquee .label{font-family:var(--f-label);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:var(--muted);text-align:center;margin-bottom:12px}
+.track{display:flex;gap:44px;width:max-content;animation:slide 48s linear infinite;align-items:center}
+.marquee:hover .track{animation-play-state:paused}
+.track .lg{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink-soft);white-space:nowrap;font-size:16px}
+.track svg{width:28px;height:28px;flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+.marquee::before,.marquee::after{content:"";position:absolute;top:0;bottom:0;width:80px;z-index:1;pointer-events:none}
+.marquee::before{left:0;background:linear-gradient(90deg,var(--card),transparent)}
+.marquee::after{right:0;background:linear-gradient(-90deg,var(--card),transparent)}
+
+/* stats */
+.stats{background:var(--deep);color:var(--on-deep);padding-block:46px}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.stat{display:flex;flex-direction:column;gap:6px;border-top:3px solid var(--butter);padding-top:16px}
+.stat b{font-family:var(--f-display);font-size:clamp(40px,5vw,58px);line-height:1;color:var(--butter);font-variant-numeric:tabular-nums}
+.stat span{color:var(--on-deep-soft);font-size:15.5px}
+@media (max-width:820px){.stats .wrap{grid-template-columns:1fr 1fr}}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:28px}
+.note{background:var(--card);border:2px solid var(--butter);border-radius:24px;padding:34px 36px;display:flex;flex-direction:column;gap:22px;box-shadow:var(--shadow)}
+.note h3{font-family:var(--f-label);font-size:22px;letter-spacing:.06em;text-transform:uppercase;color:var(--peri)}
+.note p{color:var(--ink-soft)}
+.note strong{color:var(--ink)}
+.side-stack{display:flex;flex-direction:column;gap:18px}
+.mini{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 26px;display:flex;flex-direction:column;gap:10px}
+.mini h3{font-family:var(--f-label);font-size:19px;letter-spacing:.08em;text-transform:uppercase;color:var(--peri)}
+.lang{display:flex;gap:12px;flex-wrap:wrap}
+.lang div{flex:1;min-width:120px;border-radius:14px;background:var(--paper-2);padding:12px 14px}
+.lang b{display:block;font-family:var(--f-display);font-size:20px}
+.lang span{font-size:14px;color:var(--muted)}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+/* timelines */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+.col-title{font-family:var(--f-display);font-size:30px;margin-bottom:22px}
+.tl{position:relative;display:flex;flex-direction:column;gap:22px;padding-left:34px}
+.tl::before{content:"";position:absolute;left:10px;top:8px;bottom:8px;width:3px;background:var(--butter);border-radius:3px}
+.tl-item{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;display:flex;flex-direction:column;gap:6px}
+.tl-item::before{content:"";position:absolute;left:-32px;top:24px;width:19px;height:19px;border-radius:50%;background:var(--butter);border:4px solid var(--paper)}
+.tl-item .when{font-family:var(--f-label);font-weight:600;letter-spacing:.06em;color:var(--peri);font-size:17px}
+.tl-item h3{font-size:23px}
+.tl-item .org{color:var(--ink-soft);font-weight:600}
+.tl-item p{color:var(--muted);font-size:15.5px}
+.pill-soft{display:inline-block;font-family:var(--f-label);font-weight:600;letter-spacing:.06em;font-size:14px;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:var(--sage-soft);color:var(--sage);width:max-content}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:56px}
+@media (max-width:1000px){.skills{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.skills{grid-template-columns:1fr}}
+.skill{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:10px;transition:transform .2s,border-color .2s}
+.skill:hover{transform:translateY(-4px);border-color:var(--butter)}
+.skill .si{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--butter-soft);color:var(--ink)}
+.skill h3{font-size:21px}
+.skill p{font-size:15px;color:var(--muted)}
+.toolsets{display:flex;flex-direction:column;gap:30px}
+.ts-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.ts-head h3{font-family:var(--f-label);font-size:20px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);white-space:nowrap}
+.ts-head hr{flex:1;border:none;border-top:1px dashed var(--line);margin:0}
+.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+@media (max-width:1000px){.logos{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:600px){.logos{grid-template-columns:repeat(3,1fr)}}
+.logo-tile{background:var(--tile);border:1px solid var(--line);border-radius:18px;padding:18px 10px 14px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;transition:transform .2s,box-shadow .2s}
+.logo-tile:hover{transform:translateY(-4px) rotate(-1deg);box-shadow:var(--shadow)}
+.logo-tile .lm{width:46px;height:46px;display:grid;place-items:center}
+.logo-tile .lm svg{width:40px;height:40px}
+.logo-tile span{font-size:13.5px;font-weight:600;color:#3B4160;line-height:1.25}
+.logo-tile .mono-logo,.m-tools .mono-logo,.minilogos .mono-logo{color:#fff}
+.img-logo{width:40px;height:40px;object-fit:contain;border-radius:10px}
+.minilogos i .img-logo{width:20px;height:20px;border-radius:5px}
+.m-tools .img-logo{width:22px;height:22px;border-radius:6px}
+.track .img-logo{width:28px;height:28px;border-radius:7px}
+.mono-logo{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-family:var(--f-label);font-weight:700;font-size:18px;color:#fff;letter-spacing:.02em}
+
+/* featured bento */
+.featured{background:var(--paper-2);position:relative}
+.feat-top{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;margin-bottom:34px}
+@media (max-width:760px){.feat-top{grid-template-columns:1fr}}
+.award{display:flex;gap:14px;align-items:center;background:var(--card);border-radius:20px;padding:14px 20px;border:1px solid var(--line)}
+.medal{width:58px;height:58px;border-radius:50%;background:var(--butter);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;font-size:24px;color:#222A4A;box-shadow:inset 0 0 0 4px #fff6;flex:none}
+.award b{font-family:var(--f-display);font-size:20px;display:block}
+.award span{font-size:14.5px;color:var(--muted)}
+.bento{display:grid;grid-template-columns:330px 1fr 1fr;grid-template-rows:auto auto;gap:22px}
+@media (max-width:1050px){.bento{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.bento{grid-template-columns:1fr}}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:20px;display:flex;flex-direction:column;gap:14px;cursor:pointer;text-align:left;font:inherit;color:inherit;transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.tile:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.tile .tl-label{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tile .tl-label b{font-family:var(--f-display);font-size:22px}
+.tile .tl-label span{font-family:var(--f-label);font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--peri);white-space:nowrap}
+.tile .kp{font-size:14.5px;color:var(--muted)}
+.tile .kp b{font-family:var(--f-display);font-size:24px;color:var(--ink);margin-right:6px}
+.t-lp{grid-row:span 2;background:linear-gradient(170deg,#0B6B62,#00544D);color:#F3F1EA;border:none}
+.t-lp .tl-label b{color:#fff}.t-lp .tl-label span{color:var(--butter)}.t-lp .kp{color:#CFE7E3}.t-lp .kp b{color:#fff}
+@media (max-width:1050px){.t-lp{grid-row:auto;grid-column:span 2}}
+@media (max-width:640px){.t-lp{grid-column:auto}}
+.phone-mini{width:230px;max-width:100%;margin:4px auto 0;border:9px solid #14172A;border-radius:32px;overflow:hidden;background:#fff;height:440px;position:relative;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.phone-mini::before{content:"";position:absolute;top:7px;left:50%;transform:translateX(-50%);width:62px;height:14px;border-radius:10px;background:#14172A;z-index:2}
+.phone-mini img{width:100%;transition:transform 9s cubic-bezier(.45,0,.55,1)}
+.t-lp:hover .phone-mini img{transform:translateY(calc(-100% + 422px))}
+.hint{font-size:13.5px;opacity:.85;text-align:center}
+.fan{position:relative;height:250px;display:flex;justify-content:center;align-items:center}
+.fan img{position:absolute;width:150px;border-radius:12px;border:5px solid #fff;box-shadow:0 12px 26px rgba(0,0,0,.2);transition:transform .35s}
+.fan img:nth-child(1){transform:translateX(-120px) rotate(-12deg)}
+.fan img:nth-child(2){transform:translateX(-40px) rotate(-4deg)}
+.fan img:nth-child(3){transform:translateX(40px) rotate(4deg)}
+.fan img:nth-child(4){transform:translateX(120px) rotate(12deg)}
+.tile:hover .fan img:nth-child(1){transform:translateX(-160px) rotate(-15deg)}
+.tile:hover .fan img:nth-child(4){transform:translateX(160px) rotate(15deg)}
+.shotbox{border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/9;background:#fff;max-width:100%}
+.shotbox img{width:100%;height:100%;object-fit:cover;object-position:top}
+.strip{display:flex;gap:10px;overflow:hidden}
+.strip img{width:31%;flex:none;border-radius:10px;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line)}
+.disclaimer{margin-top:28px;background:var(--butter-soft);border-radius:6px 18px 8px 20px;padding:20px 26px;color:var(--ink);font-size:16px;transform:rotate(-.3deg);max-width:980px}
+.disclaimer b{font-family:var(--f-label);letter-spacing:.08em;text-transform:uppercase;text-decoration:underline;margin-right:6px}
+.journey{margin-top:42px}
+.journey h3{font-family:var(--f-display);font-size:28px;margin-bottom:18px}
+.steps{display:grid;grid-template-columns:repeat(9,1fr);gap:8px}
+@media (max-width:1050px){.steps{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.steps{grid-template-columns:1fr 1fr}}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 14px 16px;text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:border-color .15s,transform .15s}
+.step:hover{border-color:var(--peri);transform:translateY(-3px)}
+.step small{font-family:var(--f-label);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--peri);font-size:14px}
+.step b{font-size:15.5px;line-height:1.25}
+.step span{font-size:13.5px;color:var(--muted)}
+
+/* work grid */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.chip{font-family:var(--f-label);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:16px;border:2px solid var(--line);background:var(--card);color:var(--ink-soft);border-radius:999px;padding:8px 16px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.count{font-size:15px;color:var(--muted);margin-bottom:20px}
+.linkish{all:unset;cursor:pointer;color:var(--peri);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:1000px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;text-align:left;padding:0;font:inherit;color:inherit;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.card[hidden]{display:none!important}
+.card .thumb{aspect-ratio:16/10;background:var(--paper-2);overflow:hidden;position:relative;max-width:100%}
+.card .thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s}
+.card:hover .thumb img{transform:scale(1.04)}
+.card .cat{position:absolute;top:12px;left:12px;font-family:var(--f-label);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px;padding:4px 10px;border-radius:999px;background:var(--card);color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card .star{position:absolute;top:12px;right:12px;font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--butter);color:#222A4A}
+.card .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card .brandline{font-family:var(--f-label);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-size:14.5px}
+.card h3{font-size:22px;line-height:1.18}
+.card .kpi{display:flex;gap:12px;align-items:baseline;margin-top:auto;padding-top:10px;border-top:1px dashed var(--line)}
+.card .kpi b{font-family:var(--f-display);font-size:30px;color:var(--peri);line-height:1}
+.card .kpi span{font-size:14px;color:var(--muted)}
+.minilogos{display:flex;gap:6px;flex-wrap:wrap}
+.minilogos i{width:30px;height:30px;border-radius:9px;background:var(--tile);border:1px solid var(--line);display:grid;place-items:center}
+.minilogos i svg{width:17px;height:17px}
+.minilogos i .mono-logo{width:20px;height:20px;border-radius:5px;font-size:11px}
+.funnelthumb{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;background:linear-gradient(160deg,var(--peri-soft),var(--butter-soft));padding:20px}
+.funnelthumb div{height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--f-label);font-weight:700;font-size:16px;color:#fff;letter-spacing:.04em}
+
+/* recognition & habits */
+.recog{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:860px){.recog{grid-template-columns:1fr}}
+.rc{background:var(--deep);color:var(--on-deep);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.rc b{font-family:var(--f-display);font-size:52px;color:var(--butter);line-height:1}
+.rc p{color:var(--on-deep-soft)}
+.proof{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:22px}
+.pf{margin:0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;cursor:zoom-in;grid-column:span 2;transition:transform .2s,box-shadow .2s}
+.pf:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.pf img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.pf.sq img{object-fit:contain;background:#F7D04A}
+.pf figcaption{padding:10px 14px;font-size:14.5px;font-weight:600;color:var(--ink-soft)}
+@media (max-width:860px){.proof{grid-template-columns:1fr 1fr}.pf{grid-column:span 1}}
+.cs-strip{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:22px;margin-bottom:28px}
+.cs-cover{padding:0;border:none;border-radius:16px;overflow:hidden;cursor:zoom-in;box-shadow:0 18px 40px rgba(20,24,42,.18);background:none}
+.cs-cover img{width:100%;display:block}
+.cs-text h3{font-size:clamp(24px,3vw,34px);margin:6px 0 10px}
+.cs-text p{color:var(--ink-soft)}
+.pdf-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.pdf-acts .btn{font-size:16px;padding:10px 18px}
+@media (max-width:760px){.cs-strip{grid-template-columns:1fr}}
+.dates{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.dates span{font-size:13px;padding:3px 9px;border-radius:999px;background:#ffffff1a;color:var(--on-deep)}
+.habits{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:1000px){.habits{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.habits{grid-template-columns:1fr}}
+.habit{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.habit .num{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--butter-soft);color:var(--ink);font-family:var(--f-display);font-weight:700;font-size:20px}
+.habit h3{font-size:21px}
+.habit p{color:var(--muted);font-size:15.5px}
+
+/* contact */
+.connect{text-align:center;position:relative}
+.connect h2{font-size:clamp(56px,9vw,120px);font-style:italic;color:var(--peri)}
+.connect .row{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:30px}
+.cbox{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:10px 12px 10px 20px;font-size:17px;max-width:100%}
+.cbox .t{overflow-wrap:anywhere;user-select:all}
+.copy{border:none;background:var(--butter);color:#222A4A;border-radius:999px;padding:8px 14px;cursor:pointer;font-family:var(--f-label);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:15px}
+footer{padding-block:28px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* modal */
+dialog{border:none;padding:0;border-radius:26px;width:min(1180px,95vw);max-height:92vh;background:var(--card);color:var(--ink);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(20,24,42,.62);backdrop-filter:blur(3px)}
+.m-in{display:grid;grid-template-columns:1.1fr .9fr;max-height:92vh}
+@media (max-width:900px){.m-in{grid-template-columns:1fr;overflow:auto}}
+.m-media{background:var(--paper-2);padding:30px;display:flex;flex-direction:column;gap:14px;justify-content:safe center;min-width:0;overflow:auto}
+.m-info{padding:34px 34px 30px;overflow:auto;display:flex;flex-direction:column;gap:18px;min-width:0}
+@media (max-width:900px){.m-info,.m-media{overflow:visible}}
+.m-close{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-size:20px;z-index:3}
+.m-info h2{font-size:clamp(28px,3.2vw,38px)}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px}
+.meta-row span{border:1.5px solid var(--butter);border-radius:10px;padding:4px 10px;font-size:14px;font-weight:600;color:var(--ink-soft)}
+.m-block h4{font-family:var(--f-label);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--peri);font-size:17px;margin:0 0 8px}
+.m-block p{color:var(--ink-soft)}
+.m-block ul{margin:0;padding-left:20px;color:var(--ink-soft);display:flex;flex-direction:column;gap:5px}
+.results{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.res{background:var(--butter-soft);border-radius:16px;padding:12px 14px}
+.res b{font-family:var(--f-display);font-size:28px;line-height:1.05;display:block;font-variant-numeric:tabular-nums}
+.res span{font-size:13.5px;color:var(--ink-soft)}
+.achieve{display:flex;gap:12px;align-items:center;background:var(--deep);color:var(--on-deep);border-radius:16px;padding:12px 16px;font-size:15px}
+.achieve .medal{width:44px;height:44px;font-size:18px}
+.m-tools{display:flex;flex-wrap:wrap;gap:8px}
+.m-tools span{display:inline-flex;align-items:center;gap:8px;background:var(--tile);border:1px solid var(--line);border-radius:999px;padding:5px 12px 5px 6px;font-size:14px;font-weight:600;color:#3B4160}
+.m-tools svg{width:20px;height:20px}
+.m-tools .mono-logo{width:22px;height:22px;border-radius:6px;font-size:12px}
+.slide{border-radius:14px;overflow:hidden;box-shadow:0 18px 40px rgba(20,24,42,.18);background:#fff;cursor:zoom-in;position:relative}
+.slide img{width:100%;display:block}
+.slide::after{content:"⤢ Zoom";position:absolute;right:10px;bottom:10px;background:rgba(20,24,42,.7);color:#fff;font-size:12px;font-weight:600;padding:3px 8px;border-radius:999px;opacity:0;transition:opacity .2s}
+.slide:hover::after{opacity:1}
+.phone{width:min(270px,80%);margin:0 auto;border:10px solid #14172A;border-radius:36px;overflow:hidden;background:#fff;position:relative;box-shadow:0 20px 44px rgba(0,0,0,.3)}
+.phone::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:70px;height:16px;border-radius:12px;background:#14172A;z-index:2}
+.phone .scr{height:540px;overflow-y:auto;scrollbar-width:thin}
+.phone img{width:100%;display:block}
+.ig-row{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
+.ig-row img{width:auto;height:min(50vh,460px);max-width:78%;flex:none;border-radius:12px;scroll-snap-align:center;box-shadow:0 10px 24px rgba(0,0,0,.18);cursor:zoom-in}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.thumbs button{width:72px;height:46px;border-radius:8px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:var(--card)}
+.thumbs button[aria-current="true"]{border-color:var(--peri)}
+.thumbs img{width:100%;height:100%;object-fit:cover;object-position:top}
+.caption{text-align:center;font-size:13.5px;color:var(--muted)}
+.lightbox{position:fixed;inset:0;background:rgba(10,12,24,.92);z-index:100;display:flex;align-items:center;justify-content:center;padding:calc(20px + env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));cursor:zoom-out}
+.lightbox[hidden],.card[hidden]{display:none!important}
+.lightbox img{max-width:100%;max-height:100%;border-radius:10px;object-fit:contain}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:999px;font-weight:600;opacity:0;transition:.25s;z-index:120;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+.cert{display:grid;grid-template-columns:110px 1fr;gap:20px;align-items:center;background:var(--card);border:2px solid var(--butter);border-radius:22px;padding:20px 22px;margin-bottom:22px;box-shadow:var(--shadow)}
+.cert img.badge{width:110px;height:110px;border-radius:50%;background:#fff}
+.cert h3{font-size:23px}
+.cert .meta{font-size:14.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.cert .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.cert .acts a,.cert .acts button{font-family:var(--f-label);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:15px;border-radius:999px;padding:6px 14px;text-decoration:none;cursor:pointer;border:2px solid var(--ink);background:transparent;color:var(--ink)}
+.cert .acts a{background:var(--ink);color:var(--paper)}
+@media (max-width:480px){.cert{grid-template-columns:1fr;justify-items:start}}
+.cert-pill{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 14px 4px 4px;font-weight:600;font-size:14.5px;color:var(--ink);text-decoration:none;margin-top:22px}
+.cert-pill img{width:32px;height:32px;border-radius:50%;background:#fff}
+.sticker .ic img{width:38px;height:38px;border-radius:50%}
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="sprig" viewBox="0 0 120 160">
+      <path d="M60 158 C58 120 62 70 60 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M60 128 C40 124 26 110 22 92 C42 94 56 108 60 128Z" fill="currentColor" opacity=".55"/>
+      <path d="M60 104 C80 100 94 86 98 68 C78 70 64 84 60 104Z" fill="currentColor" opacity=".7"/>
+      <path d="M60 78 C42 74 30 60 28 44 C46 46 58 60 60 78Z" fill="currentColor" opacity=".55"/>
+      <path d="M60 54 C76 50 88 38 90 24 C74 26 62 38 60 54Z" fill="currentColor" opacity=".7"/>
+      <path d="M60 30 C52 24 50 14 54 4 C62 10 64 20 60 30Z" fill="currentColor" opacity=".6"/>
+    </symbol>
+    <symbol id="bloom" viewBox="0 0 60 60">
+      <g fill="currentColor"><circle cx="30" cy="14" r="11"/><circle cx="45" cy="25" r="11"/><circle cx="40" cy="43" r="11"/><circle cx="20" cy="43" r="11"/><circle cx="15" cy="25" r="11"/></g>
+      <circle cx="30" cy="30" r="7" fill="#7A5B2E"/>
+    </symbol>
+  </defs>
+</svg>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot">MA</span>Mellisa Alvina</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills &amp; Tools</a></li>
+      <li><a href="#featured">KalaKlin</a></li>
+      <li><a href="#work">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn solid cta" href="#contact" style="padding:8px 16px;font-size:16px">Let's talk</a>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light or dark theme">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="sprig" style="left:-10px;top:30px;width:90px;transform:rotate(-18deg)"><use href="#sprig"/></svg>
+  <svg class="sprig" style="right:2%;bottom:-20px;width:110px;transform:rotate(14deg);color:var(--peri);opacity:.35"><use href="#sprig"/></svg>
+  <div class="wrap">
+    <div>
+      <span class="otw"><i></i>Open to work · Performance, CRM &amp; Analytics roles</span>
+      <p class="eyebrow">Digital Marketing Portfolio · 2026</p>
+      <h1 style="margin-top:14px">Hi, I'm <em>Mellisa.</em></h1>
+      <p class="rotator">I plan, launch and optimise <b id="rot">live paid campaigns</b></p>
+      <p class="lede">A Computer Science graduate with an MBA in Marketing who reads campaigns like data. I find the one number that changes the decision, then turn it into a plan a team can act on.</p>
+      <a class="cert-pill" href="https://skillshop.credential.net/45e493f2-9c52-4030-b56b-9291fad2d738" target="_blank" rel="noopener"><img src="img--badge-gads.png" alt="">Google Ads Search Certified ↗</a>
+      <div class="ctas">
+        <a class="btn solid" href="#work">See my projects</a>
+        <a class="btn" href="Mellisa-Alvina-CV.pdf" target="_blank" rel="noopener" download="Mellisa-Alvina-CV.pdf"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download CV</a>
+      </div>
+      <div class="contact-row">
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>mellisaalvina@gmail.com</span>
+        <a href="https://www.linkedin.com/in/mellisaalvina/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>linkedin.com/in/mellisaalvina</a>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Jakarta · open to relocation</span>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="arch">
+        <span class="photo"><img src="img--r--avatar.jpg" alt="Mellisa Alvina"></span>
+        <svg style="position:absolute;top:10%;right:12%;width:46px;color:var(--butter)"><use href="#bloom"/></svg>
+        <svg style="position:absolute;bottom:22%;left:10%;width:30px;color:var(--peri);opacity:.55"><use href="#bloom"/></svg>
+      </div>
+      <div class="sticker s1"><span class="ic" style="background:var(--butter);color:#222A4A">2nd</span><span><b>2nd place</b>live ads competition</span></div>
+      <div class="sticker s2"><span class="ic" style="background:var(--peri-soft);color:var(--peri)">5×</span><span><b>5 times</b>picked to present to class</span></div>
+      <div class="sticker s3"><span class="ic" style="background:var(--sage-soft);color:var(--sage)">Rp</span><span><b>−69% CPL</b>after fixing tracking</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-label="Tools I work with">
+  <p class="label">Tools I work with</p>
+  <div class="track" id="track"></div>
+</div>
+
+<section class="impact" id="impact" aria-labelledby="impTitle">
+  <div class="wrap">
+    <div class="imp-head">
+      <p class="eyebrow" style="color:var(--butter)">For recruiters · 30-second read</p>
+      <h2 id="impTitle">Results first, then the story behind them</h2>
+      <p class="imp-sub"><b id="projCount">20</b> projects · <b id="toolCount">34</b> tools · <b>Rp927K</b> of real ad budget managed · Google Ads Search Certified</p>
+    </div>
+    <div class="imp-grid">
+      <button class="imp" type="button" data-open="kl-meta"><span class="tag">Meta Ads · live</span><b data-count="-69" data-suffix="%">−69%</b><span class="lbl">cost per lead after I traced and fixed broken Pixel/GTM tracking</span><span class="go">See the case →</span></button>
+      <button class="imp" type="button" data-open="risingstar"><span class="tag">Meta Ads audit</span><b data-count="171" data-prefix="+">+171</b><span class="lbl">more leads modelled from the same Rp51.6M budget, by moving money, not adding it</span><span class="go">See the case →</span></button>
+      <button class="imp" type="button" data-open="kl-google"><span class="tag">Google Ads · live</span><b>6.38%</b><span class="lbl">click-through rate on Search; every conversion came from local-intent ad groups</span><span class="go">See the case →</span></button>
+      <button class="imp" type="button" data-open="ga4"><span class="tag">Paid media analytics</span><b>Rp2.39B</b><span class="lbl">loss found in one channel across 1,655 rows of ads data, with a reallocation plan</span><span class="go">See the case →</span></button>
+      <button class="imp" type="button" data-open="kl-crm"><span class="tag">CRM & lifecycle</span><b data-count="4.1" data-suffix="×" data-dec="1">4.1×</b><span class="lbl">cheaper subscriber acquisition through the referral flow I designed</span><span class="go">See the case →</span></button>
+      <a class="imp hl" href="#recognition"><span class="tag">Recognition</span><b>2nd · 5×</b><span class="lbl">2nd of 4 teams in the live ads competition, and picked 5 times to present to the class</span><span class="go">See the proof →</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">About me</p>
+      <h2>From statistics to performance marketing</h2>
+    </div>
+    <div class="about-grid">
+      <div class="note">
+        <div><h3>My journey</h3><p>I studied <strong>Computer Science at BINUS</strong> and earned an <strong>MBA in Marketing at Universitas Gadjah Mada</strong>. Since 2023 I have analysed survey data for academic research with <strong>regression and SEM</strong>. That habit of testing every assumption now shapes how I read ad accounts, funnels and customer lifecycles.</p></div>
+        <div><h3>What I bring</h3><p>At RevoU I ran <strong>live Meta Ads and Google Ads campaigns with real budgets</strong>, built the landing page they pointed to, fixed the tracking that made results measurable, and created CRM journeys, SEO content and dashboards for brands like <strong>ShopeeFood, Timezone, Good Day and Muda.id</strong>.</p></div>
+        <div><h3>What I'm looking for</h3><p>Roles in <strong>performance marketing, growth, CRM or marketing analytics</strong>, in Indonesia or abroad. I'm happiest where data decides where the next rupiah goes.</p></div>
+      </div>
+      <div class="side-stack">
+        <div class="mini">
+          <h3>Languages</h3>
+          <div class="lang"><div><b>Indonesian</b><span>Native</span></div><div><b>English</b><span>Professional</span></div></div>
+        </div>
+        <div class="mini">
+          <h3>Strengths</h3>
+          <p style="color:var(--ink-soft)">Data analysis · campaign optimisation · budget reallocation · tracking QA · clear presentations</p>
+        </div>
+        <div class="mini" style="background:var(--deep);border:none;color:var(--on-deep)">
+          <h3 style="color:var(--butter)">Class favourite</h3>
+          <p style="color:var(--on-deep-soft)">My work was chosen 5 times as a class example, earning the cohort award <strong style="color:var(--on-deep)">"Si Paling Presentasi"</strong> (best presenter).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap grid2">
+    <div>
+      <h2 class="col-title">Education &amp; Certification</h2>
+      <div class="cert">
+        <img class="badge" src="img--badge-gads.png" alt="Google Ads Search Certified badge">
+        <div>
+          <p class="eyebrow">Google Skillshop · Certification</p>
+          <h3>Google Ads Search Certification</h3>
+          <p class="meta">Issued Oct 17, 2026 · Valid until Oct 17, 2027 · ID 197499379</p>
+          <div class="acts"><a href="https://skillshop.credential.net/45e493f2-9c52-4030-b56b-9291fad2d738" target="_blank" rel="noopener">Verify credential ↗</a><button type="button" data-zoom="img--cert-gads.jpg">View certificate</button></div>
+        </div>
+      </div>
+      <div class="cert">
+        <img class="badge" src="img--r--badge-revou.jpg" alt="RevoU logo">
+        <div>
+          <p class="eyebrow">RevoU · Mini Course</p>
+          <h3>Intro to Digital Marketing</h3>
+          <p class="meta">Issued May 29, 2026 · 1-week certified online course · No. DMMC-25052026-01-1-00109</p>
+          <div class="acts"><button type="button" data-zoom="img--r--cert-dmmc.jpg">View certificate</button></div>
+        </div>
+      </div>
+      <div class="tl">
+        <div class="tl-item"><span class="when">Jun – Dec 2026</span><h3>Full-Stack Digital Marketing</h3><span class="org">RevoU · Jakarta</span><p>Meta Ads, Google Ads, SEO, CRM, social media, GA4 &amp; Looker Studio</p><span class="pill-soft">In progress · certificate Dec 2026</span></div>
+        <div class="tl-item"><span class="when">2018 – 2020</span><h3>MBA, Marketing</h3><span class="org">Universitas Gadjah Mada</span><p>GPA 3.39</p></div>
+        <div class="tl-item"><span class="when">2012 – 2017</span><h3>B.Sc. Computer Science (S.Kom)</h3><span class="org">BINUS University</span><p>Informatics</p></div>
+      </div>
+    </div>
+    <div>
+      <h2 class="col-title">Work Experience</h2>
+      <div class="tl">
+        <div class="tl-item"><span class="when">Jun 2026 – Present</span><h3>Digital Marketing Trainee</h3><span class="org">RevoU · Group B, Section Seoul</span><p>Rotated as Project Manager, Performance Team and Technical Lead for KalaKlin's live campaigns. Team placed 2nd of 4.</p></div>
+        <div class="tl-item"><span class="when">Jan 2023 – Present</span><h3>Freelance Research Data Analyst</h3><span class="org">Remote · academic clients</span><p>Questionnaire data processing, regression and structural equation modelling with SPSS, SmartPLS, AMOS and LISREL.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Skills &amp; Tools</p>
+      <h2>What I do, and what I do it with</h2>
+      <p>Every tool below was used hands-on in at least one project in this portfolio. Google Ads skills are backed by the Google Ads Search Certification.</p>
+    </div>
+    <div class="skills" id="skills-grid"></div>
+    <div class="toolsets" id="toolsets"></div>
+  </div>
+</section>
+
+<section id="featured" class="featured">
+  <svg class="sprig" style="right:-14px;top:20px;width:120px;transform:rotate(20deg)"><use href="#sprig"/></svg>
+  <div class="wrap">
+    <div class="feat-top">
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="eyebrow">Notable projects · featured case</p>
+        <h2>KalaKlin: a laundry brand built from zero</h2>
+        <p>A pre-launch, WhatsApp-first laundry subscription in West Jakarta. Our team took it from an empty Instagram to a live landing page and real paid campaigns, plus SEO and CRM.</p>
+      </div>
+      <div class="award"><span class="medal">2nd</span><span><b>2nd place overall</b>of 4 laundry teams · Meta Ads 88 + Google Ads 70 = 158</span></div>
+    </div>
+    <div class="cs-strip">
+      <button type="button" class="cs-cover" data-zoom="img--n--casestudy-1.jpg"><img src="img--n--casestudy-1.jpg" alt="KalaKlin digital marketing case study cover"></button>
+      <div class="cs-text">
+        <p class="eyebrow">The whole story in 14 pages</p>
+        <h3>From business pitch to paid ads</h3>
+        <p>Three phases, one learning loop: build the brand, generate leads on Meta, capture intent on Google. ≈Rp927K of real ad spend, every number from the live platforms.</p>
+        <div class="pdf-acts"><a class="btn butter" href="https://drive.google.com/file/d/118TLDmCccaJovu9aeNN2cr75Nt_oMlhq/view" target="_blank" rel="noopener">Read the KalaKlin case study (PDF) ↗</a></div>
+      </div>
+    </div>
+    <div class="bento">
+      <button class="tile t-lp" type="button" data-open="kl-lp">
+        <span class="tl-label"><b>Landing Page</b><span>Kiro · GitHub</span></span>
+        <span class="phone-mini"><img src="img--lp-full.jpg" alt="Full KalaKlin landing page, scrolling inside a phone frame"></span>
+        <span class="hint">Hover to scroll the live page · tap for details</span>
+        <span class="kp"><b>7</b>conversion events tracked with GTM</span>
+      </button>
+      <button class="tile" type="button" data-open="kl-meta">
+        <span class="tl-label"><b>Meta Ads</b><span>Live campaign</span></span>
+        <span class="fan"><img src="img--ad-0.jpg" alt=""><img src="img--ad-1.jpg" alt=""><img src="img--ad-2.jpg" alt=""><img src="img--ad-4.jpg" alt="Four KalaKlin Meta ad creatives"></span>
+        <span class="kp"><b>~Rp22K</b>cost per lead after the tracking fix</span>
+      </button>
+      <button class="tile" type="button" data-open="kl-google">
+        <span class="tl-label"><b>Google Search Ads</b><span>Live campaign</span></span>
+        <span class="shotbox"><img src="img--n--casestudy-10.jpg" alt="Google Ads results: local intent delivered every conversion"></span>
+        <span class="kp"><b>6.38%</b>CTR · all 4 conversions from local search</span>
+      </button>
+      <button class="tile" type="button" data-open="kl-content">
+        <span class="tl-label"><b>Content</b><span>Carousel &amp; Reel</span></span>
+        <span class="strip"><img src="img--car-1.jpg" alt=""><img src="img--car-2.jpg" alt=""><img src="img--car-4.jpg" alt="Education carousel frames"></span>
+        <span class="kp"><b>6</b>frame education carousel, published</span>
+      </button>
+      <button class="tile" type="button" data-open="kl-crm">
+        <span class="tl-label"><b>CRM Lifecycle</b><span>Retention</span></span>
+        <span class="shotbox"><img src="img--n--crm-3.jpg" alt="CRM outcomes: 17 subscribers, Rp3.55M MRR, 4.1x cheaper via referral"></span>
+        <span class="kp"><b>4.1x</b>cheaper acquisition via referral</span>
+      </button>
+    </div>
+    <p class="disclaimer"><b>Disclaimer</b>These projects used real ad accounts and real budgets for KalaKlin, a pre-launch business built by our team in RevoU's Digital Marketing program. Results come from live platform data.</p>
+    <div class="journey">
+      <h3>Nine projects, one brand</h3>
+      <div class="steps" id="steps"></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">All projects</p>
+      <h2>Case studies, one click deep</h2>
+      <p>Each card opens the objective, what I did, the results and the tools, with key slides you can zoom into and the full English case study as a PDF.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="recognition" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Recognition</p>
+      <h2>Work chosen as the class example</h2>
+      <p>Tap any image to see the original announcement slide from class.</p>
+    </div>
+    <div class="recog">
+      <div class="rc"><b>2nd</b><p>Overall placement of 4 laundry teams for KalaKlin's live campaigns: <strong style="color:var(--on-deep)">Meta Ads 88</strong> and <strong style="color:var(--on-deep)">Google Ads 70</strong>, 158 points in total.</p></div>
+      <div class="rc"><b>5×</b><p>Assignments selected to present as the best example to the class, at both Intermediate and Advanced level.</p><div class="dates"><span>1 Aug</span><span>10 Aug</span><span>22 Aug</span><span>26 Sep</span><span>10 Oct 2026</span></div></div>
+      <div class="rc"><svg style="width:56px;height:56px;color:var(--butter)"><use href="#bloom"/></svg><p><strong style="color:var(--on-deep)">"Si Paling Presentasi"</strong>, the cohort award for the most presentations.</p></div>
+    </div>
+    <div class="proof">
+      <figure class="pf" data-zoom="img--r--lb-meta.jpg"><img src="img--r--lb-meta.jpg" alt="Meta Ads final score: KalaKlin 88.00, second of four teams" loading="lazy"><figcaption>Meta Ads score · KalaKlin 88.00</figcaption></figure>
+      <figure class="pf" data-zoom="img--r--lb-google.jpg"><img src="img--r--lb-google.jpg" alt="Google Ads final score: KalaKlin 70.00, second of four teams" loading="lazy"><figcaption>Google Ads score · KalaKlin 70.00</figcaption></figure>
+      <figure class="pf" data-zoom="img--r--lb-total.jpg"><img src="img--r--lb-total.jpg" alt="Overall score: KalaKlin 158.00, second of four teams" loading="lazy"><figcaption>Overall · KalaKlin 158.00, 2nd place</figcaption></figure>
+      <figure class="pf" data-zoom="img--r--award-presentasi.jpg"><img src="img--r--award-presentasi.jpg" alt="Si Paling Presentasi award slide, 5 presentations" loading="lazy"><figcaption>"Si Paling Presentasi" · 5× presenter</figcaption></figure>
+      <figure class="pf sq" data-zoom="img--r--pres-adv.jpg"><img src="img--r--pres-adv.jpg" alt="Selected as Presenter, Advanced" loading="lazy"><figcaption>Presenter · Advanced</figcaption></figure>
+      <figure class="pf sq" data-zoom="img--r--pres-int.jpg"><img src="img--r--pres-int.jpg" alt="Selected as Presenter, Intermediate" loading="lazy"><figcaption>Presenter · Intermediate</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">How I work</p>
+      <h2>Four habits in every project</h2>
+    </div>
+    <div class="habits">
+      <div class="habit"><span class="num">1</span><h3>Start from the business number</h3><p>Goals are written in absolute figures and worked backwards into the funnel, so every metric has a reason to exist.</p></div>
+      <div class="habit"><span class="num">2</span><h3>Read the median, not just the mean</h3><p>Blended results hide outliers. I break data down by day, ad set and post before concluding anything.</p></div>
+      <div class="habit"><span class="num">3</span><h3>Test tracking before spending</h3><p>GTM, Pixel and GA4 are checked before money goes out, and platform numbers are cross-checked.</p></div>
+      <div class="habit"><span class="num">4</span><h3>Use AI, then verify it</h3><p>AI speeds up drafts, code and research; every number, claim and character count is checked by hand.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="connect" style="background:var(--paper-2)">
+  <svg class="sprig" style="left:4%;top:40px;width:110px;transform:rotate(-20deg)"><use href="#sprig"/></svg>
+  <svg class="sprig" style="right:6%;bottom:30px;width:90px;transform:rotate(24deg);color:var(--peri);opacity:.4"><use href="#sprig"/></svg>
+  <div class="wrap">
+    <p class="eyebrow">Let's work together</p>
+    <h2 style="margin-top:10px">Let's connect!</h2>
+    <p style="color:var(--ink-soft);max-width:560px;margin:16px auto 0;font-size:18px">Open to digital marketing, performance marketing, CRM and marketing analytics roles, full-time or project-based.</p>
+    <div class="row">
+      <div class="cbox"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="t" id="email">mellisaalvina@gmail.com</span><button class="copy" type="button" id="copyBtn">Copy</button></div>
+      <a class="btn butter" href="https://www.linkedin.com/in/mellisaalvina/" target="_blank" rel="noopener">LinkedIn profile ↗</a>
+      <a class="btn" href="Mellisa-Alvina-CV.pdf" target="_blank" rel="noopener" download="Mellisa-Alvina-CV.pdf">Download CV (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© 2026 Mellisa Alvina · Digital Marketing Portfolio</span><span>Some RevoU case data is masked for education.</span></div></footer>
+
+<dialog id="modal" aria-labelledby="mTitle">
+  <button class="m-close" type="button" id="mClose" aria-label="Close">✕</button>
+  <div class="m-in">
+    <div class="m-media" id="mMedia"></div>
+    <div class="m-info" id="mInfo"></div>
+  </div>
+</dialog>
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-label="Zoomed image"><img id="lbImg" alt=""></div>
+<div class="toast" id="toast">Copied</div>
+
+<script>
+const F=p=>"img--"+String(p).replace(/\//g,"--");
+const SI = {"meta":{"t":"Meta","h":"0467DF","p":"M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"},"googleads":{"t":"Google Ads","h":"4285F4","p":"M3.9998 22.9291C1.7908 22.9291 0 21.1383 0 18.9293s1.7908-3.9998 3.9998-3.9998 3.9998 1.7908 3.9998 3.9998-1.7908 3.9998-3.9998 3.9998zm19.4643-6.0004L15.4632 3.072C14.3586 1.1587 11.9121.5028 9.9988 1.6074S7.4295 5.1585 8.5341 7.0718l8.0009 13.8567c1.1046 1.9133 3.5511 2.5679 5.4644 1.4646 1.9134-1.1046 2.568-3.5511 1.4647-5.4644zM7.5137 4.8438L1.5645 15.1484A4.5 4.5 0 0 1 4 14.4297c2.5597-.0075 4.6248 2.1585 4.4941 4.7148l3.2168-5.5723-3.6094-6.25c-.4499-.7793-.6322-1.6394-.5878-2.4784z"},"googleanalytics":{"t":"Google Analytics","h":"E37400","p":"M22.84 2.9982v17.9987c.0086 1.6473-1.3197 2.9897-2.967 2.9984a2.9808 2.9808 0 01-.3677-.0208c-1.528-.226-2.6477-1.5558-2.6105-3.1V3.1204c-.0369-1.5458 1.0856-2.8762 2.6157-3.1 1.6361-.1915 3.1178.9796 3.3093 2.6158.014.1201.0208.241.0202.3619zM4.1326 18.0548c-1.6417 0-2.9726 1.331-2.9726 2.9726C1.16 22.6691 2.4909 24 4.1326 24s2.9726-1.3309 2.9726-2.9726-1.331-2.9726-2.9726-2.9726zm7.8728-9.0098c-.0171 0-.0342 0-.0513.0003-1.6495.0904-2.9293 1.474-2.891 3.1256v7.9846c0 2.167.9535 3.4825 2.3505 3.763 1.6118.3266 3.1832-.7152 3.5098-2.327.04-.1974.06-.3983.0593-.5998v-8.9585c.003-1.6474-1.33-2.9852-2.9773-2.9882z"},"googletagmanager":{"t":"Google Tag Manager","h":"246FDB","p":"M12.003 0a3 3 0 0 0-2.121 5.121l6.865 6.865-4.446 4.541 1.745 1.836a3.432 3.432 0 0 1 .7.739l.012.011-.001.002a3.432 3.432 0 0 1 .609 1.953 3.432 3.432 0 0 1-.09.78l7.75-7.647c.031-.029.067-.05.098-.08.023-.023.038-.052.06-.076a2.994 2.994 0 0 0-.06-4.166l-9-9A2.99 2.99 0 0 0 12.003 0zM8.63 2.133L.88 9.809a2.998 2.998 0 0 0 0 4.238l7.7 7.75a3.432 3.432 0 0 1-.077-.729 3.432 3.432 0 0 1 3.431-3.431 3.432 3.432 0 0 1 .826.101l-5.523-5.81 4.371-4.373-2.08-2.08c-.903-.904-1.193-2.183-.898-3.342zm3.304 16.004a2.932 2.932 0 0 0-2.931 2.931A2.932 2.932 0 0 0 11.934 24a2.932 2.932 0 0 0 2.932-2.932 2.932 2.932 0 0 0-2.932-2.931z"},"looker":{"t":"Looker","h":"4285F4","p":"M11.9475 0c-1.1598.0021-2.0982.944-2.096 2.1038a2.1 2.1 0 00.356 1.166l.895-.8959a.884.884 0 11.565.564l-.895.895c.9593.6478 2.2621.3953 2.91-.564.6478-.9593.3953-2.262-.564-2.91A2.096 2.096 0 0011.9475 0zm-.835 6.1128a3.2629 3.2629 0 00-.653-1.965l-1.164 1.162a1.667 1.667 0 01-.318 2.012l.632 1.5449a3.2819 3.2819 0 001.503-2.754zm-3.2499 1.666h-.03c-.9217.0009-1.6697-.7455-1.6707-1.6673-.001-.9217.7454-1.6697 1.6672-1.6707a1.669 1.669 0 01.9195.275l1.152-1.152c-1.4069-1.141-3.4724-.9257-4.6135.4811s-.9257 3.4723.481 4.6135a3.2799 3.2799 0 002.7275.6652l-.633-1.5439v-.001zm4.1279 1.3359c-.728 0-1.452.106-2.15.315l.922 2.2519c2.6872-.6819 5.4184.9438 6.1002 3.631.6818 2.6873-.9439 5.4184-3.6311 6.1002s-5.4184-.9439-6.1002-3.631c-.5682-2.2394.4655-4.5774 2.5041-5.6643l-.91-2.2449c-3.6908 1.808-5.2173 6.2657-3.4093 9.9567l.0005.001c1.808 3.6909 6.2657 5.2173 9.9567 3.4093l.001-.0005c3.6913-1.8071 5.2187-6.2645 3.4116-9.9558a7.4417 7.4417 0 00-6.6865-4.1696h-.008l-.001.001z"},"instagram":{"t":"Instagram","h":"FF0069","p":"M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"},"tiktok":{"t":"TikTok","h":"000000","p":"M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"},"facebook":{"t":"Facebook","h":"0866FF","p":"M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"},"youtube":{"t":"YouTube","h":"FF0000","p":"M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"},"x":{"t":"X","h":"000000","p":"M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"},"canva":{"t":"Canva","h":"00C4CC","p":"M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zM6.962 7.68c.754 0 1.337.549 1.405 1.2.069.583-.171 1.097-.822 1.406-.343.171-.48.172-.549.069-.034-.069 0-.137.069-.206.617-.514.617-.926.548-1.508-.034-.378-.308-.618-.583-.618-1.2 0-2.914 2.674-2.674 4.629.103.754.549 1.646 1.509 1.646.308 0 .65-.103.96-.24.5-.264.799-.47 1.097-.8-.073-.885.704-2.046 1.851-2.046.515 0 .926.205.96.583.068.514-.377.582-.514.582s-.378-.034-.378-.17c-.034-.138.309-.07.275-.378-.035-.206-.24-.274-.446-.274-.72 0-1.131.994-1.029 1.611.035.275.172.549.447.549.205 0 .514-.31.617-.755.068-.308.343-.514.583-.514.102 0 .17.034.205.171v.138c-.034.137-.137.548-.102.651 0 .069.034.171.17.171.092 0 .436-.18.777-.459.117-.59.253-1.298.253-1.357.034-.24.137-.48.617-.48.103 0 .171.034.205.171v.138l-.136.617c.445-.583 1.097-.994 1.508-.994.172 0 .309.102.309.274 0 .103 0 .274-.069.446-.137.377-.309.96-.412 1.474 0 .137.035.274.207.274.171 0 .685-.206 1.096-.754l.007-.004c-.002-.068-.007-.134-.007-.202 0-.411.035-.754.104-.994.068-.274.411-.514.617-.514.103 0 .205.069.205.171 0 .035 0 .103-.034.137-.137.446-.24.857-.24 1.269 0 .24.034.582.102.788 0 .034.035.069.07.069.068 0 .548-.445.89-1.028-.308-.206-.48-.549-.48-.96 0-.72.446-1.097.858-1.097.343 0 .617.24.617.72 0 .308-.103.65-.274.96h.102a.77.77 0 0 0 .584-.24.293.293 0 0 1 .134-.117c.335-.425.83-.74 1.41-.74.48 0 .924.205.959.582.068.515-.378.618-.515.618l-.002-.002c-.138 0-.377-.035-.377-.172 0-.137.309-.068.274-.376-.034-.206-.24-.275-.446-.275-.686 0-1.13.891-1.028 1.611.034.275.171.583.445.583.206 0 .515-.308.652-.754.068-.274.343-.514.583-.514.103 0 .17.034.205.171 0 .069 0 .206-.137.652-.17.308-.171.48-.137.617.034.274.171.48.309.583.034.034.068.102.068.102 0 .069-.034.138-.137.138-.034 0-.068 0-.103-.035-.514-.205-.72-.548-.789-.891-.205.24-.445.377-.72.377-.445 0-.89-.411-.96-.926a1.609 1.609 0 0 1 .075-.649c-.203.13-.422.203-.623.203h-.17c-.447.652-.927 1.098-1.27 1.303a.896.896 0 0 1-.377.104c-.068 0-.171-.035-.205-.104-.095-.152-.156-.392-.193-.667-.481.527-1.145.805-1.453.805-.343 0-.548-.206-.582-.55v-.376c.102-.754.377-1.2.377-1.337a.074.074 0 0 0-.069-.07c-.24 0-1.028.824-1.166 1.373l-.103.445c-.068.309-.377.515-.582.515-.103 0-.172-.035-.206-.172v-.137l.046-.233c-.435.31-.87.508-1.075.508-.308 0-.48-.172-.514-.412-.206.274-.445.412-.754.412-.352 0-.696-.24-.862-.593-.244.275-.523.553-.852.764-.48.309-1.028.549-1.68.549-.582 0-1.097-.309-1.371-.583-.412-.377-.651-.96-.686-1.509-.205-1.68.823-3.84 2.4-4.8.378-.205.755-.343 1.132-.343zm9.77 3.291c-.104 0-.172.172-.172.343 0 .274.137.583.309.755a1.74 1.74 0 0 0 .102-.583c0-.343-.137-.515-.24-.515z"},"wordpress":{"t":"WordPress","h":"21759B","p":"M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"},"mailchimp":{"t":"MailChimp","h":"FFE01B","p":"M11.267 0C6.791-.015-1.82 10.246 1.397 12.964l.79.669a3.88 3.88 0 0 0-.22 1.792c.084.84.518 1.644 1.22 2.266.666.59 1.542.964 2.392.964 1.406 3.24 4.62 5.228 8.386 5.34 4.04.12 7.433-1.776 8.854-5.182.093-.24.488-1.316.488-2.267 0-.956-.54-1.352-.885-1.352-.01-.037-.078-.286-.172-.586-.093-.3-.19-.51-.19-.51.375-.563.382-1.065.332-1.35-.053-.353-.2-.653-.496-.964-.296-.311-.902-.63-1.753-.868l-.446-.124c-.002-.019-.024-1.053-.043-1.497-.014-.32-.042-.822-.197-1.315-.186-.668-.508-1.253-.911-1.627 1.112-1.152 1.806-2.422 1.804-3.511-.003-2.095-2.576-2.729-5.746-1.416l-.672.285A678.22 678.22 0 0 0 12.7.504C12.304.159 11.817.002 11.267 0zm.073.873c.166 0 .322.019.465.058.297.084 1.28 1.224 1.28 1.224s-1.826 1.013-3.52 2.426c-2.28 1.757-4.005 4.311-5.037 7.082-.811.158-1.526.618-1.963 1.253-.261-.218-.748-.64-.834-.804-.698-1.326.761-3.902 1.781-5.357C5.834 3.44 9.37.867 11.34.873zm3.286 3.273c.04-.002.06.05.028.074-.143.11-.299.26-.413.414a.04.04 0 0 0 .031.064c.659.004 1.587.235 2.192.574.041.023.012.103-.034.092-.915-.21-2.414-.369-3.97.01-1.39.34-2.45.863-3.224 1.426-.04.028-.086-.023-.055-.06.896-1.035 1.999-1.935 2.987-2.44.034-.018.07.019.052.052-.079.143-.23.447-.278.678-.007.035.032.063.062.042.615-.42 1.684-.868 2.622-.926zm3.023 3.205l.056.001a.896.896 0 0 1 .456.146c.534.355.61 1.216.638 1.845.015.36.059 1.229.074 1.478.034.571.184.651.487.751.17.057.33.098.563.164.706.198 1.125.4 1.39.658.157.162.23.333.253.497.083.608-.472 1.36-1.942 2.041-1.607.746-3.557.935-4.904.785l-.471-.053c-1.078-.145-1.693 1.247-1.046 2.201.417.615 1.552 1.015 2.688 1.015 2.604 0 4.605-1.111 5.35-2.072a.987.987 0 0 0 .06-.085c.036-.055.006-.085-.04-.054-.608.416-3.31 2.069-6.2 1.571 0 0-.351-.057-.672-.182-.255-.1-.788-.344-.853-.891 2.333.72 3.801.039 3.801.039a.072.072 0 0 0 .042-.072.067.067 0 0 0-.074-.06s-1.911.283-3.718-.378c.197-.64.72-.408 1.51-.345a11.045 11.045 0 0 0 3.647-.394c.818-.234 1.892-.697 2.727-1.356.281.618.38 1.299.38 1.299s.219-.04.4.073c.173.106.299.326.213.895-.176 1.063-.628 1.926-1.387 2.72a5.714 5.714 0 0 1-1.666 1.244c-.34.18-.704.334-1.087.46-2.863.935-5.794-.093-6.739-2.3a3.545 3.545 0 0 1-.189-.522c-.403-1.455-.06-3.2 1.008-4.299.065-.07.132-.153.132-.256 0-.087-.055-.179-.102-.243-.374-.543-1.669-1.466-1.409-3.254.187-1.284 1.31-2.189 2.357-2.135.089.004.177.01.266.015.453.027.85.085 1.223.1.625.028 1.187-.063 1.853-.618.225-.187.405-.35.71-.401.028-.005.092-.028.215-.028zm.022 2.18a.42.42 0 0 0-.06.005c-.335.054-.347.468-.228 1.04.068.32.187.595.32.765.175-.02.343-.022.498 0 .089-.205.104-.557.024-.942-.112-.535-.261-.872-.554-.868zm-3.66 1.546a1.724 1.724 0 0 0-1.016.326c-.16.117-.311.28-.29.378.008.032.031.056.088.063.131.015.592-.217 1.122-.25.374-.023.684.094.923.2.239.104.386.173.443.113.037-.038.026-.11-.031-.204-.118-.192-.36-.387-.618-.497a1.601 1.601 0 0 0-.621-.129zm4.082.81c-.171-.003-.313.186-.317.42-.004.236.131.43.303.432.172.003.314-.185.318-.42.004-.236-.132-.429-.304-.432zm-3.58.172c-.05 0-.102.002-.155.008-.311.05-.483.152-.593.247-.094.082-.152.173-.152.237a.075.075 0 0 0 .075.076c.07 0 .228-.063.228-.063a1.98 1.98 0 0 1 1.001-.104c.157.018.23.027.265-.026.01-.016.022-.049-.01-.1-.063-.103-.311-.269-.66-.275zm2.26.4c-.127 0-.235.051-.283.148-.075.154.035.363.246.466.21.104.443.063.52-.09.075-.155-.035-.364-.246-.467a.542.542 0 0 0-.237-.058zm-11.635.024c.048 0 .098 0 .149.003.73.04 1.806.6 2.052 2.19.217 1.41-.128 2.843-1.449 3.069-.123.02-.248.029-.374.026-1.22-.033-2.539-1.132-2.67-2.435-.145-1.44.591-2.548 1.894-2.811.117-.024.252-.04.398-.042zm-.07.927a1.144 1.144 0 0 0-.847.364c-.38.418-.439.988-.366 1.19.027.073.07.094.1.098.064.008.16-.039.22-.2a1.2 1.2 0 0 0 .017-.052 1.58 1.58 0 0 1 .157-.37.689.689 0 0 1 .955-.199c.266.174.369.5.255.81-.058.161-.154.469-.133.721.043.511.357.717.64.738.274.01.466-.143.515-.256.029-.067.005-.107-.011-.125-.043-.053-.113-.037-.18-.021a.638.638 0 0 1-.16.022.347.347 0 0 1-.294-.148c-.078-.12-.073-.3.013-.504.011-.028.025-.058.04-.092.138-.308.368-.825.11-1.317-.195-.37-.513-.602-.894-.65a1.135 1.135 0 0 0-.138-.01z"},"github":{"t":"GitHub","h":"181717","p":"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"},"googlesearchconsole":{"t":"Google Search Console","h":"458CF5","p":"M8.548 1.156L6.832 2.872v1.682h1.716zm0 3.398v.035H6.832v-.035H3.386L0 7.844v3.577h2.826V8.94c0-.525.429-.954.954-.954h16.476c.525 0 .954.43.954.954v2.48h2.754V7.844l-3.386-3.29H17.3v.035h-1.717v-.035zm7.035 0H17.3V2.872l-1.717-1.716zM8.679 1.188V2.84h6.773V1.188zm11.471 7.07a.834.834 0 00-.132.01l-.543.002c-5.216.014-10.432-.008-15.648.01-.435-.063-.794.436-.716.883v2.264h17.812c-.016-.888.045-1.782-.034-2.666-.104-.342-.427-.502-.739-.502zm-15.422.634a.689.698 0 01.689.698.689.698 0 01-.689.697.689.698 0 01-.688-.697.689.698 0 01.688-.698zm2.134 0a.689.698 0 01.689.698.689.698 0 01-.689.697.689.698 0 01-.688-.697.689.698 0 01.688-.698zM.036 11.645v9.156c0 1.05.858 1.908 1.907 1.908h.883V11.645zm21.174 0v11.064h.882c1.05 0 1.908-.858 1.908-1.908v-9.156zM4.057 13.133v6.85h6.137v-6.85zm13.243.021v3.777l-1.708.977-1.708-.977v-3.758a4.006 4.006 0 000 7.23v2.441h3.457v-2.442a4.006 4.006 0 00-.041-7.248zm-13.243 8.26v1.43h7.925v-1.43z"},"pagespeedinsights":{"t":"PageSpeed Insights","h":"4285F4","p":"M22.363 1.636H1.635C.732 1.636 0 2.37.001 3.273L0 20.727v.003c0 .903.733 1.634 1.635 1.634h20.73c.904 0 1.635-.734 1.635-1.637V3.273c.016-.89-.76-1.64-1.637-1.637zM3.979 2.886c.492-.507 1.279.28.77.772-.491.508-1.278-.279-.77-.771zM1.8 2.89c.507-.509 1.28.265.772.771-.493.502-1.274-.28-.772-.771zm21.7 17.838c.012.611-.524 1.148-1.137 1.136H1.635A1.137 1.137 0 0 1 .5 20.727L.501 4.91H23.5v15.819zM11 16.159l5.946-4.577c.235-.2.576.129.389.372l-.002-.002-3.936 6.35a1.638 1.638 0 0 1-2.448.405c-.785-.668-.811-1.835.05-2.548zm4.763-.75c.09-.168 2.002-3.181 2.06-3.35 2.056 1.813 3.029 4.382 2.898 7.026h-3.819c.073-1.39-.29-2.678-1.139-3.676zm-8.679 3.682H3.278c-.357-7.022 7.148-11.735 13.39-7.92l-3.461 2.618c-3.3-.762-6.364 1.71-6.123 5.302z"},"openai":{"t":"OpenAI","h":"412991","p":"M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"},"claude":{"t":"Claude","h":"D97757","p":"m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"},"googlegemini":{"t":"Google Gemini","h":"8E75B2","p":"M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81"},"shopee":{"t":"Shopee","h":"EE4D2D","p":"M15.9414 17.9633c.229-1.879-.981-3.077-4.1758-4.0969-1.548-.528-2.277-1.22-2.26-2.1719.065-1.056 1.048-1.825 2.352-1.85a5.2898 5.2898 0 0 1 2.8838.89c.116.072.197.06.263-.039.09-.145.315-.494.39-.62.051-.081.061-.187-.068-.281-.185-.1369-.704-.4149-.983-.5319a6.4697 6.4697 0 0 0-2.5118-.514c-1.909.008-3.4129 1.215-3.5389 2.826-.082 1.1629.494 2.1078 1.73 2.8278.262.152 1.6799.716 2.2438.892 1.774.552 2.695 1.5419 2.478 2.6969-.197 1.047-1.299 1.7239-2.818 1.7439-1.2039-.046-2.2878-.537-3.1278-1.19l-.141-.11c-.104-.08-.218-.075-.287.03-.05.077-.376.547-.458.67-.077.108-.035.168.045.234.35.293.817.613 1.134.775a6.7097 6.7097 0 0 0 2.8289.727 4.9048 4.9048 0 0 0 2.0759-.354c1.095-.465 1.8029-1.394 1.9449-2.554zM11.9986 1.4009c-2.068 0-3.7539 1.95-3.8329 4.3899h7.6657c-.08-2.44-1.765-4.3899-3.8328-4.3899zm7.8516 22.5981-.08.001-15.7843-.002c-1.074-.04-1.863-.91-1.971-1.991l-.01-.195L1.298 6.2858a.459.459 0 0 1 .45-.494h4.9748C6.8448 2.568 9.1607 0 11.9996 0c2.8388 0 5.1537 2.5689 5.2757 5.7898h4.9678a.459.459 0 0 1 .458.483l-.773 15.5883-.007.131c-.094 1.094-.979 1.9769-2.0709 2.0059z"},"googlesheets":{"t":"Google Sheets","h":"34A853","p":"M11.318 12.545H7.91v-1.909h3.41v1.91zM14.728 0v6h6l-6-6zm1.363 10.636h-3.41v1.91h3.41v-1.91zm0 3.273h-3.41v1.91h3.41v-1.91zM20.727 6.5v15.864c0 .904-.732 1.636-1.636 1.636H4.909a1.636 1.636 0 0 1-1.636-1.636V1.636C3.273.732 4.005 0 4.909 0h9.318v6.5h6.5zm-3.273 2.773H6.545v7.909h10.91v-7.91zm-6.136 4.636H7.91v1.91h3.41v-1.91z"},"googleslides":{"t":"Google Slides","h":"FBBC04","p":"M16.09 15.273H7.91v-4.637h8.18v4.637zm1.728-8.523h2.91v15.614c0 .904-.733 1.636-1.637 1.636H4.909a1.636 1.636 0 0 1-1.636-1.636V1.636C3.273.732 4.005 0 4.909 0h9.068v6.75h3.841zm-.363 2.523H6.545v7.363h10.91V9.273zm-2.728-5.979V6h6.001l-6-6v3.294z"},"ibm":{"t":"IBM","h":"052FAD","p":"M23.544 15.993q.059 0 .06-.053v-.036q-.001-.052-.06-.052h-.09v.14zm-.09.262h-.121v-.498h.225c.112 0 .169.066.169.157c0 .079-.036.129-.09.15l.111.19h-.133l-.092-.17h-.07zm.434-.222v-.062c0-.2-.157-.357-.363-.357a.355.355 0 0 0-.363.357v.062c0 .2.156.358.363.358a.355.355 0 0 0 .363-.358m-.838-.03c0-.28.212-.492.475-.492c.264 0 .475.213.475.491a.477.477 0 0 1-.475.491a.477.477 0 0 1-.475-.49M16.21 8.13l-.216-.624h-3.56v.624zm.413 1.19l-.216-.623h-3.973v.624zm2.65 7.147h3.107v-.624h-3.108zm0-1.192h3.107v-.623h-3.108zm0-1.19h1.864v-.624h-1.865zm0-1.191h1.864v-.624h-1.865zm0-1.191h1.864v-.624h-3.555l-.175.504l-.175-.504h-3.555v.624h1.865v-.574l.2.574h3.33l.2-.574zm1.864-1.815h-3.142l-.217.624h3.359zm-7.46 3.006h1.865v-.624h-1.865zm0 1.19h1.865v-.623h-1.865zm-1.243 1.191h3.108v-.623h-3.108zm0 1.192h3.108v-.624h-3.108zm6.386-8.961l-.216.624h3.776v-.624zm-.629 1.815h4.19v-.624h-3.974zm-4.514 1.19h3.359l-.216-.623h-3.143zm2.482 2.383h2.496l.218-.624h-2.932zm.417 1.19h1.662l.218-.623h-2.098zm.416 1.191h.83l.218-.623h-1.266zm.414 1.192l.217-.624h-.432zm-12.433-.006l4.578.006c.622 0 1.18-.237 1.602-.624h-6.18zm4.86-3v.624h2.092q-.002-.325-.083-.624zm-3.616.624h1.865v-.624H6.217zm3.617-3.573h2.008q.081-.3.083-.624H9.834zm-3.617 0h1.865v-.624H6.217zM9.55 7.507H4.973v.624h6.18a2.36 2.36 0 0 0-1.602-.624zm2.056 1.191H4.973v.624h6.884a2.4 2.4 0 0 0-.25-.624zm-5.39 2.382v.624h4.87c.207-.176.382-.387.519-.624zm4.87 1.191h-4.87v.624h5.389a2.4 2.4 0 0 0-.519-.624m-6.114 3.006h6.634c.11-.193.196-.402.25-.624H4.973zM0 8.13h4.352v-.624H0zm0 1.191h4.352v-.624H0zm1.243 1.191h1.865v-.624H1.243zm0 1.191h1.865v-.624H1.243zm0 1.19h1.865v-.623H1.243zm0 1.192h1.865v-.624H1.243zM0 15.276h4.352v-.623H0zm0 1.192h4.352v-.624H0Z"}};
+/* tool registry: key -> [label, simple-icon key | null, mono text, mono color] */
+const T = {
+  meta:["Meta Ads Manager","meta"], pixel:["Meta Pixel","meta"], gads:["Google Ads","googleads"], kwp:["Keyword Planner","googleads"],
+  tts:["TikTok Shop","tiktok"], shopee:["Shopee Ads","shopee"],
+  ga4:["GA4","googleanalytics"], gtm:["Google Tag Manager","googletagmanager"], looker:["Looker Studio","looker"], gsc:["Search Console","googlesearchconsole"],
+  sheets:["Google Sheets","googlesheets"], excel:["Excel",null,"X","#1D6F42","logo/excel.png"],
+  ig:["Instagram","instagram"], fb:["Facebook","facebook"], tiktok:["TikTok","tiktok"], yt:["YouTube","youtube"], canva:["Canva","canva"], kol:["KOL.ID",null,"KOL","#E2484D","logo/kolid.png"],
+  ahrefs:["Ahrefs",null,"ah","#FF8800","logo/ahrefs.png"], uber:["Ubersuggest",null,"U","#F15A24","logo/ubersuggest.png"], psi:["PageSpeed Insights","pagespeedinsights"], wp:["WordPress","wordpress"],
+  kiro:["Kiro",null,"K","#7B3FE4","logo/kiro.png"], github:["GitHub","github"],
+  mailchimp:["Mailchimp","mailchimp"], knock:["Knock",null,"kn","#2B2E3A","logo/knock.svg"], whimsical:["Whimsical",null,"W","#7A3FF2","logo/whimsical.png"],
+  chatgpt:["ChatGPT","openai"], claude:["Claude","claude"], gemini:["Gemini","googlegemini"],
+  spss:["SPSS",null,"SPSS","#1F70C1","logo/spss.png"], smartpls:["SmartPLS",null,"PLS","#2E8B57","logo/smartpls.png"], amos:["IBM SPSS Amos","ibm"], lisrel:["LISREL (SSI)",null,"LIS","#7A5230","logo/lisrel.png"],
+  slides:["Google Slides","googleslides"]
+};
+const GROUPS = [
+  ["Paid media",["meta","pixel","gads","kwp","tts","shopee"]],
+  ["Analytics & tracking",["ga4","gtm","looker","gsc","sheets","excel"]],
+  ["Social & content",["ig","fb","tiktok","yt","canva","kol"]],
+  ["SEO & web build",["ahrefs","uber","psi","wp","kiro","github"]],
+  ["CRM & automation",["mailchimp","knock","whimsical"]],
+  ["AI assistants",["chatgpt","claude","gemini"]],
+  ["Research & statistics",["spss","smartpls","amos","lisrel"]]
+];
+const SKILLS = [
+  ["Performance Marketing","Meta & Google Ads setup, audience design, daily optimisation","M3 17l5-5 4 4 8-8M14 8h6v6"],
+  ["Data Analysis","Pivot, funnel and cohort reads; regression & SEM","M4 20V10M10 20V4M16 20v-7M22 20H2"],
+  ["Tracking & Analytics","GA4, GTM and Pixel setup, QA and dashboards","M12 3a9 9 0 1 0 9 9M12 7v5l3 3"],
+  ["CRM & Lifecycle","Segmentation, RFM, automated journeys, A/B tests","M4 12a8 8 0 0 1 14-5M20 12a8 8 0 0 1-14 5M18 3v4h-4M6 21v-4h4"],
+  ["SEO & Content","Keyword research, briefs, on-page audits, articles","M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM21 21l-5-5"],
+  ["Social Media Strategy","Content pillars, calendars, KOL and UGC","M4 5h16v11H8l-4 4zM8 10h8M8 13h5"],
+  ["Landing Page Build","AI-assisted build with Kiro, versioned on GitHub","M3 5h18v14H3zM3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"],
+  ["Media Planning","Budget split by funnel, channel mix, KPIs","M12 3v9l7 4M12 12 5 16M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"]
+];
+function logo(k,size){
+  const t=T[k]; if(!t) return "";
+  if(t[1] && SI[t[1]]){
+    const s=SI[t[1]]; const dark=parseInt(s.h.slice(0,2),16)+parseInt(s.h.slice(2,4),16)+parseInt(s.h.slice(4,6),16)<90;
+    return `<svg viewBox="0 0 24 24" role="img" aria-label="${t[0]}"><path fill="${dark?"#20243A":"#"+s.h}" d="${s.p}"/></svg>`;
+  }
+  if(t[4]) return `<img class="img-logo" src="${F(t[4])}" alt="${t[0]}">`;
+  return `<span class="mono-logo" style="background:${t[3]}" role="img" aria-label="${t[0]}">${t[2]}</span>`;
+}
+const CATS = {paid:"Paid Ads",analytics:"Analytics",social:"Social Media",seo:"SEO & Web",crm:"CRM",strategy:"Media Plan"};
+
+const DRIVE=id=>`https://drive.google.com/file/d/${id}/view`;
+const PDF={casestudy:"118TLDmCccaJovu9aeNN2cr75Nt_oMlhq",meta:"1xE2hhdg6rWWbM3sZnUg3q5-SJWyx23uY",social90:"1XVWJdN93IzG7H48gNDFM2WyeOrKT5ecq",content:"1w-ZA4ShVaWu6BxeGeUgx6ahkkvO4Kfgr",kol:"1q6qjYZXTwCKMpAYt81RsMMnIeIuC63CF",seo:"1j27dCe1eA9iqeKlwhpua6klw1Mbbmn1M",crm:"1w0mqwyPlzsWWU--0ib4GdGZeZEF8fuCX",risingstar:"1IwkF-DXQq8Rn0KAOEDVKt0UnZ-0swgCZ",threesecond:"10IGdWP5MunJBRSM4i7qYMBbGmRix166S",muda:"1g2NBIevrmOoM4eHp26VrXftE7g1SDuu6",w4adv:"1GgOjTB3TlXHtlI5BI6WAVqofrEmnbCIz",w4int:"1koFFStdaeH8saTawqM4SDNg1tyUyQEB5",mpa:"1ySYMgkYiMuDk88nqzV2ETNKstn9ZxHo3",zalora:"1Sh34gMI1P94bGd-h_MLOhAtNrP7Vxta_",goodday:"1ybr5rDXbOBTWrZQxQhd6VFgxDQPe2Hr0",aice:"1OkXUEfb_LhWlZnID9Vo9W6Dfzu5QM__M",timezone:"1fcbSwXD4tTK1TS6wBV-b6Cs6Omb5D7M3",comeback:"1cYLr1tWK3JjQYGUDr0i63NSiuE85GSdS",mamasuka:"1XVRDYiqSyUR8pEoCAEgxlfltnhzSeJq5"};
+const P = [
+ {id:"kl-lp",kl:1,cat:"seo",brand:"KalaKlin",title:"The landing page every campaign sent traffic to",date:"Jul – Sep 2026",role:"Builder & tracking setup",
+  obj:"Give a pre-launch brand one fast page that explains the offer and turns visits into early-bird sign-ups, with every conversion measurable.",
+  scope:["Turned the team's wireframe into a detailed build prompt: sections, brand colours, copy and form fields","Built kalaklin.my.id with Kiro, an AI coding IDE, and versioned the code on GitHub","Put the offer and sign-up form above the fold, then pain points → 5 USPs → 2 packages → early-bird box → FAQ","Added GTM, GA4 and Meta Pixel with 7 events, then optimised the page while ads were live (nav, form hook, instant confirmation)"],
+  res:[["15","unique sign-ups during the Meta sprint"],["7","conversion events tracked"],["60s → 0","form confirmation wait"],["1","page powering all paid & organic traffic"]],
+  tools:["kiro","github","gtm","ga4","pixel","gsc"],
+  media:[["phone","lp-full","Full landing page — scroll inside the phone"],["slide","n/casestudy-4","One page, one action: claim the early-bird"],["slide","wireframe","Team wireframe the build started from"]],
+  pdf:"casestudy",pdfLabel:"KalaKlin case study"},
+ {id:"kl-meta",kl:1,cat:"paid",brand:"KalaKlin",title:"Zero leads on the dashboard, and the tracking bug behind them",date:"Aug – Sep 2026",role:"Performance Team",
+  obj:"Generate early-bird sign-ups on the landing page with a Rp500K test budget, aged 25–35 within 10 km of Kebon Jeruk.",
+  scope:["Tested cold interest vs Broad vs IG-engager audiences, and video vs single image, across 3 campaigns","Traced why the landing page logged 16 form submissions while Ads Manager showed none: Pixel/GTM fired PageView instead of Lead","Fixed it with the Technical lead by publishing GTM container v11; leads appeared the next morning","Monitored spend, CTR and CPL daily and moved budget to Broad + Reels, the only combination that converted"],
+  res:[["~Rp22K","daily CPL once tracking worked"],["Rp33,967","CPL on Broad + Reels"],["6","attributed leads"],["Rp428K","spent of Rp500K"]],
+  tools:["meta","pixel","gtm","ga4","chatgpt"],ach:"2nd of 4 teams overall · Meta Ads score 88",
+  media:[["ig","ad-0|ad-1|ad-2|ad-3|ad-4","Five AI-assisted creatives tested in the campaign — swipe"],["slide","n/casestudy-6","Results: 6 leads and the tracking gap we fixed"],["slide","n/casestudy-7","What we learned"],["slide","meta-optim","Optimisation evidence"],["slide","r/lb-meta","Meta Ads score: KalaKlin 88.00, 2nd of 4"]],
+  pdf:"casestudy",pdfLabel:"KalaKlin case study"},
+ {id:"kl-google",kl:1,cat:"paid",brand:"KalaKlin",title:"Local intent delivered every conversion",date:"Sep 2026",role:"Technical Lead & final report",
+  obj:"Capture people already searching for laundry in our service area, with a ≈Rp500K budget, split into a Traffic and a Conversion campaign.",
+  scope:["Tested Google Ads, GTM, GA4 and the form conversion end to end before any spend","Found zero delivery on the category campaign and duplicate keywords on launch day","Moved budget to local-area ad groups (+138% / +160%), added 16 keywords, cut max CPC Rp5,500 → Rp3,500","Wrote the final report: broad match leaked 42.9% of spend, area names lifted CTR 3×"],
+  res:[["4","conversions, all from local-area search"],["6.38%","CTR on 86 clicks"],["Rp41K","CPA of the best ad group"],["99.8%","of budget delivered on pace"]],
+  tools:["gads","kwp","gtm","ga4","chatgpt"],ach:"2nd of 4 teams overall · Google Ads score 70 · Google Ads Search Certified",
+  media:[["slide","n/casestudy-10","Local intent delivered every conversion"],["slide","n/casestudy-9","Optimisation loop: verify, diagnose, reallocate"],["slide","n/casestudy-11","What we learned"],["slide","n/casestudy-12","Proof: both channels ran live"],["slide","r/lb-google","Google Ads score: KalaKlin 70.00, 2nd of 4"]],
+  pdf:"casestudy",pdfLabel:"KalaKlin case study"},
+ {id:"kl-metaplan",kl:1,cat:"paid",brand:"KalaKlin",title:"A 30-day Meta Ads plan: 90 leads on Rp4.5M",date:"Aug 2026",role:"Performance Marketer (individual)",
+  obj:"Design the full-funnel Meta Ads go-to-market for a pre-launch subscription: audiences, structure, budget, competitor intelligence and creatives.",
+  scope:["Split goals into Engagement, prospecting Leads and remarketing Leads, with KPIs that end at LTV:CAC","Built two mutually excluded personas plus a 1% Lookalike seeded on 75% video viewers","Structured 3 campaigns · 7 ad sets · 17 ads with a naming convention and UTMs","Reverse-modelled 90,000 impressions → 900 clicks → 90 leads → 27 subscribers","Read a competitor's live ads in Meta Ads Library and turned the gaps into three moves","Set an optimisation rhythm and a kill rule: no ad set off before 50 conversions or 7 days"],
+  res:[["3 · 7 · 17","campaigns · ad sets · ads"],["Rp50K","blended CPL target"],["3.3×","planned LTV : CAC"],["1.8 mo","payback period"]],
+  tools:["meta","pixel","gtm","chatgpt","sheets"],
+  media:[["slide","n/meta-1","Meta Ads go-to-market strategy"],["slide","n/meta-7","Account → campaigns → ad sets"],["slide","n/meta-10","Reverse funnel & unit economics"],["slide","n/meta-11","Competitor intel from Meta Ads Library"],["slide","n/meta-15","Hero ad for the time-poor persona"],["slide","n/meta-17","Eight-card carousel, hook to sign-up"]],
+  pdf:"meta"},
+ {id:"kl-organic",kl:1,cat:"social",brand:"KalaKlin",title:"A 90-day social plan built backwards from 60 leads",date:"Aug 2026",role:"Social Media Strategist",presented:"10 Aug 2026",
+  obj:"Turn a zero-follower, pre-launch brand into 60 qualified pre-registrations before launch, using Instagram and Facebook.",
+  scope:["Audited 3 competitors; none offered a fixed monthly price, which became the positioning","Worked backwards from 60 leads: 40,500 impressions → 16,200 reach → 300 sessions","Planned 195 assets across 5 pillars and a 40/35/25 funnel split, with a 20 → 33 → 47% ramp","Named the weakest link: at 1.2% CTR the plan yields ~17 leads, so day-30 checkpoints are built in"],
+  res:[["60","pre-registration leads target"],["16,200","unique accounts to reach"],["195","assets planned in 13 weeks"],["40/35/25","awareness · consideration · conversion"]],
+  tools:["ig","fb","ga4","sheets","canva"],
+  media:[["slide","n/social90-1","Building demand before day one"],["slide","n/social90-3","Executive summary"],["slide","n/social90-16","Working backward from 60 leads"],["slide","n/social90-21","Five pillars mapped to a 40/35/25 funnel"]],
+  pdf:"social90"},
+ {id:"kl-content",kl:1,cat:"social",brand:"KalaKlin",title:"Teach first, sell later: a published carousel and Reel",date:"Aug 2026",role:"Content strategist & creator",
+  obj:"Fill the top of the funnel for a brand starting from zero, with one message in two formats.",
+  scope:["Wrote the brief: audience insight, funnel stage, pillar, key message under 15 words, CTA and tone","Designed a 6-frame clothing-care carousel from my own photos","Scripted a 47-second myth-buster Reel on AIDA and passed the 3-Second hook test","Replaced a weak \"save this\" CTA with a follow invitation built on curiosity"],
+  res:[["6","carousel frames, hook to CTA"],["47 sec","9:16 Reel"],["2","assets published on IG & FB"],["< 15","words per key message"]],
+  tools:["canva","ig","fb"],
+  media:[["ig","car-1|car-2|car-3|car-4|car-5|car-6","The published 6-frame carousel — swipe"],["slide","n/content-11","Six frames, one story arc"],["slide","n/content-15","A 47-second myth-buster built on AIDA"],["slide","n/content-4","Built backwards from 60 leads"]],
+  pdf:"content"},
+ {id:"kl-kol",kl:1,cat:"social",brand:"KalaKlin",title:"The Lost Laundry Day: a micro-KOL campaign with zero ad budget",date:"Aug 2026",role:"KOL strategist",
+  obj:"Close the 90-day plan's reach gap without paid media: borrow hyperlocal audiences and turn them into owned ones.",
+  scope:["Ran five due-diligence checks per creator and benchmarked ER by tier against KOL.ID","Dropped a 168K account with near-zero ER for verified hyperlocal creators","Wrote the #HariCuciYangHilang brief: one story about the laundry day that eats every weekend","Designed a barter + Rp25K-per-lead affiliate model, tracked by UTM and referral code"],
+  res:[["6,000","incremental reach target"],["≥3%","ER by reach"],["Rp115K","planned cost per lead"],["3.8×","LTV : CAC"]],
+  tools:["ig","kol","sheets"],
+  media:[["slide","n/kolcampaign-1","The Lost Laundry Day"],["slide","n/kolcampaign-10","Two filters, benchmarked by creator tier"],["slide","n/kolcampaign-13","The big idea"],["slide","n/kolcampaign-19","Is Rp115K per lead cheap or expensive?"]],
+  pdf:"kol"},
+ {id:"kl-seo",kl:1,cat:"seo",brand:"KalaKlin",title:"From zero organic traffic to a Google entry point",date:"Sep – Oct 2026",role:"SEO & Content Strategist",
+  obj:"Open a zero-cost acquisition channel for a one-page site with no organic traffic.",
+  scope:["Researched 50 keywords, cross-validated in 3 tools, and chose \"harga laundry kiloan\"","Found the content gap: competitors list prices, nobody answers when a subscription is cheaper","Briefed AI, rewrote 6 sections by hand and fact-checked every price","Found and fixed 9 QA issues, passed 6/6 technical checks, published ~1,270 words on WordPress with UTM CTAs"],
+  res:[["50","keywords researched"],["2,940","monthly searches in the cluster"],["6/6","technical SEO checks passed"],["9","QA issues found and fixed"]],
+  tools:["kwp","ahrefs","uber","wp","gsc","chatgpt"],
+  media:[["slide","n/seo-20","The article, live on WordPress"],["slide","n/seo-9","50 keywords, mapped to the funnel"],["slide","n/seo-15","AI drafts fast. Humans make it true."],["slide","seo-forecast","90-day forecast"]],
+  pdf:"seo"},
+ {id:"kl-crm",kl:1,cat:"crm",brand:"KalaKlin",title:"From sign-up to subscriber to advocate",date:"Oct 2026",role:"CRM strategist",
+  obj:"Grow paying subscribers from leads that cost ~Rp71K each to acquire.",
+  scope:["Designed the tracking plan (15 events, 18 user properties) and an Ideal Customer Profile","Built 6 non-overlapping lifecycle stages and 17 campaigns, mapped in Whimsical","Re-engineered RFM for a subscription (recency = last pickup) into 7 segments","Built 2 flows, Welcome-to-Subscribe and a referral loop, with emails in Mailchimp and push for iOS & Android"],
+  res:[["±17","new paying subscribers in 90 days"],["Rp3.55M","new monthly recurring revenue"],["4.1×","cheaper acquisition via referral"],["25%","lead-to-subscriber target in 7 days"]],
+  tools:["whimsical","mailchimp","knock","sheets"],
+  media:[["slide","n/crm-3","What the system delivers in 90 days"],["slide","n/crm-7","Six CRM stages, sign-up to win-back"],["slide","n/crm-12","RFM for a subscription business"],["slide","n/crm-19","Two emails, built in Mailchimp"],["slide","n/crm-20","Push for iOS and Android"]],
+  pdf:"crm"},
+
+ {id:"risingstar",cat:"paid",brand:"RisingStar · EdTech",title:"171 more leads from the same Rp51.6M budget",date:"Aug 2026",role:"Meta Ads analyst",
+  obj:"Audit 12 lead-gen ad sets and decide what to stop, keep and scale, without adding spend.",
+  scope:["Compared all 12 ad sets like-for-like on CPL, link CTR, CVR, CPM and frequency","Found the leak: CPL spread 3.6× and 18.9% of budget sat in 3 ad sets bringing 9% of leads","Showed the funnel narrows at the click, not the form (13.3% click-to-lead)","Scored every ad set Start / Continue / Stop and moved Rp9.77M to four proven ones"],
+  res:[["+171","projected leads, same spend"],["−10.9%","projected blended CPL"],["1,398","leads analysed"],["Rp9.77M","moved, not added"]],
+  tools:["excel","meta","chatgpt"],
+  media:[["slide","n/risingstar-1","RisingStar Meta Ads audit"],["slide","n/risingstar-2","A healthy account with an allocation problem"],["slide","n/risingstar-5","The funnel narrows at the click"],["slide","n/risingstar-11","Start, continue, stop"],["slide","n/risingstar-12","Rp9.77M moved, not added"]],
+  pdf:"risingstar"},
+ {id:"3second",cat:"paid",brand:"BrightStar & 3Second",title:"From account audit to a full-funnel Search build",date:"Sep 2026",role:"Search Ads strategist",
+  obj:"Audit a recruitment platform's Search account, then build a Rp20M/month Search account for a menswear brand from zero.",
+  scope:["Audited $19,034 of spend and gave 72 keywords a Scale, Continue, Optimize or Stop call","Found the same service converting at a 5× different cost per conversion","Designed a 4-campaign funnel with 9 ad groups and 46 keywords sized on real Keyword Planner data","Wrote 4 Responsive Search Ads with assets, drafted end to end in Google Ads, and split budget 10/40/50"],
+  res:[["$105 vs $21","CPA of two ad groups"],["72","keywords audited"],["4 × 9","campaigns × ad groups built"],["Rp20M","monthly media plan"]],
+  tools:["gads","kwp","chatgpt","sheets"],
+  media:[["slide","n/3second-1","Audit to full-funnel build"],["slide","n/3second-6","Same service, a 5× gap in cost per conversion"],["slide","n/3second-10","A four-campaign funnel, split by intent"],["slide","n/3second-16","Ad assets in Google Ads"],["slide","n/3second-19","Rp20M split 10/40/50 across the funnel"]],
+  pdf:"threesecond"},
+ {id:"muda",cat:"paid",brand:"Muda.id",title:"Q4 growth plan: TikTok builds demand, Shopee converts",date:"Sep 2026",role:"Performance Marketing Strategist",presented:"26 Sep 2026",
+  obj:"96% of GMV sits on Shopee and TikTok Shop runs on organic LIVE only. Grow both while holding a 25× blended ROAS.",
+  scope:["Audited Muda live against 4 rival brands on Shopee and TikTok","Found six root causes, from no paid TikTok traffic to missing Pilih Lokal and bundles","Designed the \"MUDA Drop Series\" around 10.10, 11.11 and 12.12","Built GMV Max structures by product role, a creator mix, 15 content briefs and the forecast; first draft with Gemini"],
+  res:[["IDR 11.75B","Q4 GMV target"],["+136%","vs Q3 GMV"],["25×","blended ROAS, ads at 4% of GMV"],["IDR 470M","ads budget, Oct–Dec"]],
+  tools:["tts","shopee","tiktok","gemini","sheets"],
+  media:[["slide","n/muda-1","Muda.id Q4 2026 growth plan"],["slide","n/muda-3","Executive summary"],["slide","n/muda-14","The big idea: MUDA Drop Series"],["slide","n/muda-24","A ramp to 3×, not a jump"]],
+  pdf:"muda",note:"Q3 sales and AOV come from a RevoU case simulation and are masked."},
+ {id:"ga4",cat:"analytics",brand:"Google · Meta · TikTok Ads",title:"Q4 paid media review: one channel was burning cash",date:"Jul 2026",role:"Online Marketing Analyst",presented:"1 Aug 2026",
+  obj:"Consolidate 1,655 daily rows of Google, Meta and TikTok Ads data for 3 cities and decide where the next rupiah goes.",
+  scope:["Cleaned and stacked three platform exports into one Mastersheet with QUERY, then pivoted 8 KPIs","Diagnosed TikTok with a CPP → CPC/CVR → CPM/CTR tree: CTR fell 9.0% → 3.8%, creative fatigue","Showed Meta Cold tripled revenue on the same budget, and Surabaya took 25% of spend for 3% of net revenue","Blended GA4 tables in Looker Studio: sessions −42% while key events tripled"],
+  res:[["Rp36.9B","ad spend analysed"],["1.32×","blended ROAS, 1.19 → 1.48"],["Rp2.39B","lost on TikTok in Q4"],["Rp3.1B","per month to move to Meta & Google"]],
+  tools:["sheets","looker","ga4"],
+  media:[["slide","n/w4adv-1","Q4 2024 paid media review"],["slide","n/w4adv-2","Executive summary"],["slide","n/w4adv-3","TikTok's creatives wore out"],["slide","n/w4int-17","Looker Studio: traffic shrank, key actions tripled"]],
+  pdf:"w4adv",pdf2:"w4int",note:"Dataset provided by RevoU for learning purposes."},
+ {id:"ecom",cat:"analytics",brand:"E-commerce marketplace",title:"Doubling revenue without letting any channel pass 50%",date:"Jun 2026",role:"Marketing analyst",
+  obj:"Review paid and organic channels across two months, then size the budget that doubles revenue with no channel above 50% of spend.",
+  scope:["Calculated CPM, CPC, CPO, CTR, CVR and ROAS for every channel","Found TikTok took 36% of spend for 7% of revenue while Facebook returned 9.33× on 9.8%","Showed organic brings 47% of orders at zero media cost","Modelled a 4-channel mix that hits 100.4% of target, then cut Rp80M from my own first draft"],
+  res:[["5.31×","blended ROAS, Month B"],["Rp895M","budget to reach 2× revenue"],["Rp80M","saved vs my first draft"],["47%","of orders from organic"]],
+  tools:["sheets"],
+  media:[["slide","n/mpa-1","E-commerce channel review & budget plan"],["slide","n/mpa-3","Month A: every channel's metrics"],["slide","n/mpa-4","TikTok over-funded, Facebook under-funded"],["slide","n/mpa-9","Rp895M hits 100.4% of target"]],
+  pdf:"mpa"},
+ {id:"zalora",cat:"analytics",brand:"ZALORA Women",title:"Measuring what moves Women's Fashion sales on GA4",date:"Oct 2026",role:"Web analyst",
+  obj:"Give Women's Fashion a full-funnel view: where shoppers drop off and which promos actually sell, across 144,230 products.",
+  scope:["Researched the live site and found its native GA4 dataLayer","Designed a 3-tier KPI plan: 8 events from search to purchase","Built a working GTM container: 9 tags, 9 triggers and 11 variables, saved as a QA-ready version","Found 38 of 39 listing cards carry a voucher and guests hit a login wall at checkout"],
+  res:[["8","GA4 events tracked"],["9 · 9 · 11","tags · triggers · variables"],["38 / 39","listing cards with a voucher"],["6 wks","roadmap from tracking to revenue"]],
+  tools:["ga4","gtm"],
+  media:[["slide","n/zalora-1","GA4 measurement plan for ZALORA"],["slide","n/zalora-7","Eight events trace one shopper"],["slide","n/zalora-14","A dedicated container, wired to GA4"],["slide","n/zalora-28","What the live site tells the business"]],
+  pdf:"zalora",note:"Student portfolio project, not affiliated with ZALORA."},
+ {id:"goodday",cat:"social",brand:"Good Day · @gooddayid",title:"Seoul Se-Sachet: selling the moment, not the Korean trend",date:"Aug 2026",role:"Social Media Strategist (brief)",presented:"22 Aug 2026",
+  obj:"Launch Good Day Latte Series and prove brand-owned content and UGC can carry it without paid talent.",
+  scope:["Grounded targeting in the brand's real audience data and social listening","Planned an 8-week Teaser → Launch → Post-campaign roadmap with paid and KOL budget","Designed a hero 8-card carousel in two versions to A/B test, using Context, Hook, SEO and CTA","Built the #SeoulSeSachet UGC challenge, creator brief and amplification engine"],
+  res:[["8 wks","3-phase launch"],["Rp500M","total investment planned"],["16","carousel cards designed"],["3","objectives with KPIs"]],
+  tools:["ig","tiktok","canva","chatgpt","excel"],
+  media:[["slide","n/goodday-1","Seoul Se-Sachet"],["slide","n/goodday-9","The strategic decision"],["slide","n/goodday-19","Built to keep thumbs swiping"],["slide","n/goodday-23","#SeoulSeSachet UGC mechanic"]],
+  pdf:"goodday",note:"Speculative academic project, not commissioned by Good Day / Kapal Api Group."},
+ {id:"aice",cat:"social",brand:"Aice · Wall's · Campina",title:"Big reach, thin conversation",date:"Aug 2026",role:"Social media auditor",
+  obj:"Benchmark Aice against Wall's and Campina across five platforms and find its next growth lever.",
+  scope:["Mapped every official channel of 3 brands on Instagram, TikTok, YouTube, Facebook and X","Benchmarked ER on the last 20 Instagram posts each, like-for-like","Showed two viral posts carry 55% of Aice's engagement; the typical post earns 138","Turned three lessons into a Start / Stop / Continue plan"],
+  res:[["3.1M","TikTok followers, 65% of Aice's audience"],["2.8×","mean-to-median engagement gap"],["1 of 20","posts is a carousel"],["5 × 3","platforms × brands audited"]],
+  tools:["ig","tiktok","fb","yt","sheets"],
+  media:[["slide","n/aice-1","Big reach, thin conversation"],["slide","n/aice-2","Executive summary"],["slide","n/aice-15","Two viral posts carry Aice's average"],["slide","n/aice-20","Start · Stop · Continue"]],
+  pdf:"aice"},
+ {id:"timezone",cat:"seo",brand:"Timezone Indonesia",title:"A strong brand the website doesn't yet \"sell\" to Google",date:"Sep – Oct 2026",role:"SEO Consultant (brief)",
+  obj:"Audit five key pages and build a 90-day roadmap that turns existing search demand into outlet visits.",
+  scope:["Validated 33 candidate queries live on Google and mapped search intent per page","Found menu-label titles, no meta descriptions and hidden headings on key pages","Ran PageSpeed: a promo pop-up became the mobile LCP element (8.5 s)","Rewrote metadata with Claude, checked every claim, and ranked 6 next steps by impact ÷ effort"],
+  res:[["3 of 5","key pages without meta description"],["52/100","homepage mobile performance"],["≈5%","Indonesia's share of organic traffic"],["< 6 wks","to ship 3 quick wins"]],
+  tools:["ahrefs","psi","claude"],
+  media:[["slide","n/timezone-1","SEO audit: Timezone Indonesia"],["slide","n/timezone-3","Executive summary"],["slide","n/timezone-10","Hidden headings tell Google the wrong story"],["slide","n/timezone-17","No page reaches 90 on mobile"],["slide","n/timezone-23","Six next steps, ranked by impact"]],
+  pdf:"timezone"},
+ {id:"shopeefood",cat:"crm",brand:"ShopeeFood",title:"Comeback Journey: winning users back with relevance",date:"Oct 2026",role:"CRM Specialist (concept)",presented:"10 Oct 2026",
+  obj:"Most customers order 1–5 times in 3 months, then go quiet. Win them back before the habit breaks.",
+  scope:["Ordered the same meal on 3 apps: ShopeeFood cost Rp8,200 more than GoFood","Defined 5 events, 5 user properties and churn as 30+ days without an order","Built a tiered 10 / 30 / 50% offer at each user's favourite restaurant to protect margin","Built 4 flows and 6 messages in Knock and Mailchimp, each with an A/B hypothesis and a 10% control group"],
+  res:[["Day 15","first nudge, before churn"],["4","automated flows"],["6","messages across 3 channels"],["10%","control group to prove lift"]],
+  tools:["whimsical","knock","mailchimp","excel"],
+  media:[["slide","n/comeback-1","Comeback Journey"],["slide","n/comeback-4","I ordered the same meal on all 3 apps"],["slide","n/comeback-9","The comeback journey"],["slide","n/comeback-11","Built in real tools"],["slide","mailchimp","Win-back email in Mailchimp"],["slide","knock-flow","Push workflow committed in Knock"]],
+  pdf:"comeback",note:"Independent concept project; not affiliated with ShopeeFood."},
+ {id:"mamasuka",cat:"strategy",brand:"Mamasuka Delisaos",title:"A 3-month launch plan for an extreme-spicy sauce",date:"Jun 2026",role:"Digital media planner",
+  obj:"Launch Hot Lava Volcano, reach 20M Indonesian internet users and drive 1,500 e-commerce sales in 3 months on Rp200M.",
+  scope:["Turned the product insight into a dare: #BeraniHotLava","Phased the launch: tease → prove → convert, with a 40/30/30 budget split","Targeted six spicy-food behaviours, not just \"spicy lovers\"","Showed the plan clears both goals even in a bad case: 20.4M reach, 2,451 orders"],
+  res:[["20.4M","estimated reach"],["2,451","estimated orders vs 1,500 target"],["40/30/30","budget by funnel stage"],["Rp200M","3-month budget"]],
+  tools:["tiktok","ig","yt","gads","slides"],
+  media:[["slide","n/mamasuka-1","Mamasuka Hot Lava Volcano"],["slide","n/mamasuka-4","Tease → prove → convert"],["slide","n/mamasuka-10","40 / 30 / 30 budget"],["slide","n/mamasuka-11","The plan clears both goals"]],
+  pdf:"mamasuka"}
+];
+const JOURNEY=[["kl-organic","Plan","Organic social","Strategist"],["kl-content","Create","Carousel & Reel","Content"],["kl-kol","Amplify","KOL campaign","Influencer"],["kl-lp","Build","Landing page","Builder"],["kl-metaplan","Design","Meta Ads plan","Strategist"],["kl-meta","Launch","Meta Ads live","Performance"],["kl-google","Capture","Google Ads live","Technical"],["kl-seo","Rank","SEO article","Writer"],["kl-crm","Retain","CRM lifecycle","CRM"]];
+const THUMB={"kl-lp":"lp-hero","kl-meta":"ad-1","kl-google":"n/casestudy-10","kl-metaplan":"n/meta-1","kl-organic":"n/social90-1","kl-content":"car-1","kl-kol":"n/kolcampaign-1","kl-seo":"n/seo-1","kl-crm":"n/crm-1","risingstar":"n/risingstar-1","3second":"n/3second-1","muda":"n/muda-1","ga4":"n/w4adv-1","ecom":"n/mpa-1","zalora":"n/zalora-1","goodday":"n/goodday-1","aice":"n/aice-1","timezone":"n/timezone-1","shopeefood":"n/comeback-1","mamasuka":"n/mamasuka-1"};
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+$("#projCount").textContent=P.length;
+$("#toolCount").textContent=GROUPS.reduce((a,g)=>a+g[1].length,0);
+
+/* marquee */
+const all=GROUPS.flatMap(g=>g[1]);
+const lg=all.map(k=>`<span class="lg">${logo(k)}${esc(T[k][0])}</span>`).join("");
+$("#track").innerHTML=lg+lg;
+
+/* skills + logo grid */
+$("#skills-grid").innerHTML=SKILLS.map(([h,p,d])=>`<div class="skill"><span class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="${d}"/></svg></span><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join("");
+$("#toolsets").innerHTML=GROUPS.map(([g,ks])=>`<div><div class="ts-head"><h3>${esc(g)}</h3><hr></div><div class="logos">${ks.map(k=>`<div class="logo-tile"><span class="lm">${logo(k)}</span><span>${esc(T[k][0])}</span></div>`).join("")}</div></div>`).join("");
+
+/* journey */
+$("#steps").innerHTML=JOURNEY.map(([id,v,t,r],i)=>`<button class="step" type="button" data-open="${id}"><small>${i+1} · ${v}</small><b>${esc(t)}</b><span>Role: ${esc(r)}</span></button>`).join("");
+
+/* grid */
+let cat="hl";
+const HL=["kl-meta","kl-google","kl-crm","risingstar","3second","ga4","muda","shopeefood","timezone"];
+$("#filters").innerHTML=[["hl","★ Highlights"],["all",`All <span class="n">${P.length}</span>`],...Object.entries(CATS)].map(([k,v])=>`<button class="chip" type="button" data-cat="${k}" aria-pressed="${k===cat}">${v}</button>`).join("");
+function thumb(p){
+  return `<img src="${F(THUMB[p.id]+".jpg")}" alt="${esc(p.title)}" loading="lazy">`;
+}
+$("#grid").innerHTML=P.map(p=>`<button class="card" type="button" data-open="${p.id}" data-cat="${p.cat}">
+  <span class="thumb">${thumb(p)}<span class="cat">${CATS[p.cat]}</span>${p.presented?'<span class="star">★ Presented to class</span>':""}</span>
+  <span class="body"><span class="brandline">${esc(p.brand)} · ${esc(p.date)}</span><h3>${esc(p.title)}</h3>
+  <span class="minilogos">${p.tools.map(t=>`<i title="${esc(T[t][0])}">${logo(t)}</i>`).join("")}</span>
+  <span class="kpi"><b>${esc(p.res[0][0])}</b><span>${esc(p.res[0][1])}</span><span class="go">View case →</span></span></span></button>`).join("");
+function applyFilter(){let n=0;document.querySelectorAll(".card").forEach(c=>{const s=cat==="all"||(cat==="hl"?HL.includes(c.dataset.open):c.dataset.cat===cat);c.hidden=!s;if(s)n++;});$("#count").innerHTML=cat==="hl"?`Showing ${n} hand-picked highlights · <button type="button" class="linkish" id="seeAll">see all ${P.length} projects</button>`:`Showing ${n} project${n>1?"s":""}`;const sa=$("#seeAll");if(sa)sa.onclick=()=>{cat="all";document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x.dataset.cat==="all"));applyFilter();};}
+$("#filters").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;cat=b.dataset.cat;document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b));applyFilter();});
+applyFilter();
+
+/* modal */
+const modal=$("#modal");
+function mediaHTML(p,i){
+  const m=p.media[i]; let main;
+  if(m[0]==="phone") main=`<div class="phone"><div class="scr" tabindex="0" aria-label="${esc(m[2])}"><img src="${F(m[1]+".jpg")}" alt="${esc(m[2])}"></div></div>`;
+  else if(m[0]==="ig") main=`<div class="ig-row">${m[1].split("|").map(s=>`<img src="${F(s+".jpg")}" alt="" data-zoom="${F(s+".jpg")}">`).join("")}</div>`;
+  else if(m[0]==="funnel") main=`<div class="slide" style="cursor:default;padding:26px;display:flex;flex-direction:column;gap:12px;background:var(--card)"><p style="font-weight:700">GA4 funnel, 4 months</p>${[["352K sessions",100,"#5465A8"],["140K engaged · 40%",72,"#7A88C4"],["3,922 purchases · 97% drop-off",22,"#D9836C"]].map(r=>`<div style="background:${r[2]};width:${r[1]}%;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px">${r[0]}</div>`).join("")}<p style="font-size:14px;color:var(--muted)">Checkout is the leak, so tracking was designed around it.</p></div>`;
+  else main=`<div class="slide" data-zoom="${F(m[1]+".jpg")}"><img src="${F(m[1]+".jpg")}" alt="${esc(m[2])}"></div>`;
+  const th=p.media.length>1?`<div class="thumbs">${p.media.map((x,k)=>`<button type="button" data-i="${k}" aria-current="${k===i}" aria-label="Show ${esc(x[2])}"><img src="${F(x[1].split("|")[0]+".jpg")}" alt=""></button>`).join("")}</div>`:"";
+  return main+`<p class="caption">${esc(m[2])}</p>`+th;
+}
+function openP(id){
+  const p=P.find(x=>x.id===id); if(!p) return;
+  $("#mMedia").innerHTML=mediaHTML(p,0);
+  $("#mMedia").onclick=e=>{const b=e.target.closest("[data-i]");if(b){$("#mMedia").innerHTML=mediaHTML(p,+b.dataset.i);return;}const z=e.target.closest("[data-zoom]");if(z)zoom(z.dataset.zoom);};
+  $("#mInfo").innerHTML=`
+    <p class="eyebrow">${esc(p.brand)} · ${CATS[p.cat]}</p>
+    <h2 id="mTitle">${esc(p.title)}</h2>
+    <div class="meta-row"><span>${esc(p.date)}</span><span>Role: ${esc(p.role)}</span>${p.presented?`<span>★ Presented ${esc(p.presented)}</span>`:""}</div>
+    <div class="m-block"><h4>Objective</h4><p>${esc(p.obj)}</p></div>
+    <div class="m-block"><h4>Scope of work</h4><ul>${p.scope.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>
+    <div class="m-block"><h4>Results</h4><div class="results">${p.res.map(r=>`<div class="res"><b>${esc(r[0])}</b><span>${esc(r[1])}</span></div>`).join("")}</div></div>
+    ${p.ach?`<div class="achieve"><span class="medal">2nd</span><span><b>Achievement</b><br>${esc(p.ach)}</span></div>`:""}
+    <div class="m-block"><h4>Tools</h4><div class="m-tools">${p.tools.map(t=>`<span>${logo(t)}${esc(T[t][0])}</span>`).join("")}</div></div>
+    ${p.note?`<p style="font-size:14px;color:var(--muted)">${esc(p.note)}</p>`:""}
+    <div class="pdf-acts"><a class="btn butter" href="${DRIVE(PDF[p.pdf])}" target="_blank" rel="noopener">Read the full case study (PDF) ↗</a>${p.pdf2?`<a class="btn" href="${DRIVE(PDF[p.pdf2])}" target="_blank" rel="noopener">Companion deck (PDF) ↗</a>`:""}</div>`;
+  modal.showModal(); $("#mInfo").scrollTop=0;
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-open]");if(b)openP(b.dataset.open);});
+$("#mClose").onclick=()=>modal.close();
+modal.addEventListener("click",e=>{if(e.target===modal)modal.close();});
+const lb=$("#lightbox");
+function zoom(src){$("#lbImg").src=src;lb.hidden=false;}
+lb.onclick=()=>{lb.hidden=true;};
+document.addEventListener("click",e=>{const z=e.target.closest("[data-zoom]");if(z&&!z.closest("#mMedia"))zoom(z.dataset.zoom);});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!lb.hidden){lb.hidden=true;e.preventDefault();}},true);
+
+
+/* progress bar, reveal, count-up */
+(function(){
+  const bar=document.createElement("div");bar.className="progress";document.body.appendChild(bar);
+  const upd=()=>{const h=document.documentElement;const m=h.scrollHeight-innerHeight;bar.style.transform=`scaleX(${m>0?scrollY/m:0})`;};
+  addEventListener("scroll",upd,{passive:true});upd();
+  const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(!reduce&&"IntersectionObserver" in window){
+    document.documentElement.classList.add("rv-on");
+    const els=document.querySelectorAll(".sec-head,.imp,.skill,.toolsets>div,.tile,.cs-strip,.step,.rc,.pf,.habit,.tl-item,.cert,.note,.mini");
+    els.forEach((el,i)=>{el.classList.add("rv");el.style.transitionDelay=(i%6)*60+"ms";});
+    const ro=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add("in");ro.unobserve(en.target);}}),{rootMargin:"0px 0px -8% 0px"});
+    els.forEach(el=>ro.observe(el));
+    const sweep=()=>els.forEach(el=>{if(!el.classList.contains("in")&&el.getBoundingClientRect().top<innerHeight*1.05)el.classList.add("in");});
+    setTimeout(sweep,50);addEventListener("scroll",()=>requestAnimationFrame(sweep),{passive:true});
+    const co=new IntersectionObserver(es=>es.forEach(en=>{if(!en.isIntersecting)return;co.unobserve(en.target);const b=en.target,end=+b.dataset.count,dec=+(b.dataset.dec||0),pre=b.dataset.prefix||"",suf=b.dataset.suffix||"";const t0=performance.now();const f=now=>{const k=Math.min(1,(now-t0)/1100),v=end*(1-Math.pow(1-k,3));b.textContent=pre+(v<0?"−":"")+Math.abs(v).toFixed(dec)+suf;if(k<1)requestAnimationFrame(f);};requestAnimationFrame(f);}),{threshold:.6});
+    document.querySelectorAll("[data-count]").forEach(b=>co.observe(b));
+  }
+})();
+/* rotator */
+const words=["live paid campaigns","landing pages","CRM journeys","SEO content","GA4 dashboards"];
+let wi=0; const rot=$("#rot");
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(()=>{rot.classList.add("swap");setTimeout(()=>{wi=(wi+1)%words.length;rot.textContent=words[wi];rot.classList.remove("swap");},300);},2600);
+
+/* copy + toast */
+function toast(t){const el=$("#toast");el.textContent=t;el.classList.add("show");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("show"),1800);}
+$("#copyBtn").onclick=async()=>{const t=$("#email").textContent;try{await navigator.clipboard.writeText(t);toast("Email copied");}catch(e){const r=document.createRange();r.selectNodeContents($("#email"));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Selected. Press Ctrl/Cmd+C");}};
+
+/* theme */
+$("#themeBtn").onclick=()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.dataset.theme=dark?"light":"dark";try{localStorage.setItem("ma-theme",r.dataset.theme)}catch(e){}};
+try{const t=localStorage.getItem("ma-theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}
+
+/* active nav */
+const links=[...document.querySelectorAll(".nav ul a")];
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+en.target.id));}),{rootMargin:"-45% 0px -50% 0px"});
+["about","skills","featured","work","contact"].forEach(id=>io.observe(document.getElementById(id)));
+</script>
+
+</body>
+</html>
