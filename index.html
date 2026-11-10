@@ -415,6 +415,13 @@ dialog::backdrop{background:rgba(20,24,42,.62);backdrop-filter:blur(3px)}
 .cert-pill{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 14px 4px 4px;font-weight:600;font-size:14.5px;color:var(--ink);text-decoration:none;margin-top:22px}
 .cert-pill img{width:32px;height:32px;border-radius:50%;background:#fff}
 .sticker .ic img{width:38px;height:38px;border-radius:50%}
+.tl-item .ka{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--peri);margin:10px 0 4px}
+.tl-item .ka-list{margin:0;padding-left:18px;font-size:.92rem;line-height:1.5;color:var(--ink-soft)}
+.strengths{margin-top:28px;background:var(--deep);color:var(--on-deep);border-radius:20px;padding:22px 26px}
+.strengths h3{font-size:1.15rem;margin:0 0 12px}
+.strengths ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;padding:0}
+.strengths li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 14px;font-size:.9rem}
+.strengths p{margin:0;color:var(--on-deep-soft);font-size:.92rem}
 </style>
 
 </head>
@@ -459,7 +466,7 @@ dialog::backdrop{background:rgba(20,24,42,.62);backdrop-filter:blur(3px)}
   <div class="wrap">
     <div>
       <span class="otw"><i></i>Open to work · Performance, CRM &amp; Analytics roles</span>
-      <p class="eyebrow">Digital Marketing Portfolio · 2026</p>
+      <p class="eyebrow">Digital Marketing Specialist · Performance Marketing | Analytics | SEO | CRM</p>
       <h1 style="margin-top:14px">Hi, I'm <em>Mellisa.</em></h1>
       <p class="rotator">I plan, launch and optimise <b id="rot">live paid campaigns</b></p>
       <p class="lede">A Computer Science graduate with an MBA in Marketing and 5+ years of freelance statistical research. I fix the tracking, read the numbers, and decide where the next ad budget goes.</p>
@@ -581,8 +588,8 @@ dialog::backdrop{background:rgba(20,24,42,.62);backdrop-filter:blur(3px)}
     <div>
       <h2 class="col-title">Work Experience</h2>
       <div class="tl">
-        <div class="tl-item"><span class="when">Jul – Oct 2026</span><h3>Performance Marketing</h3><span class="org">KalaKlin · Freelance (RevoU Digital Marketing Program)</span><p>Rotated as Project Manager, Performance Team and Technical Lead for KalaKlin's live Meta Ads and Google Ads campaigns. Team placed 2nd of 4.</p></div>
-        <div class="tl-item"><span class="when">Jan 2021 – Present</span><h3>Freelance Quantitative Research Analyst</h3><span class="org">Self-employed · remote</span><p>~100 research projects handled end to end, delivered in 5–7 working days on average. Regression and SEM in SPSS, SmartPLS, AMOS and LISREL, turned into clear reports; ~40% of client studies published in journals.</p></div>
+        <div class="tl-item"><span class="when">Jul – Oct 2026</span><h3>Performance Marketing</h3><span class="org">KalaKlin · Freelance (RevoU Digital Marketing Program)</span><p>Rotated as Project Manager, Performance Team and Technical Lead for KalaKlin's live Meta Ads and Google Ads campaigns, set up and debugged conversion tracking (GA4, GTM, Meta Pixel), and wrote daily performance reports and the final campaign reviews.</p><p class="ka">Key achievements</p><ul class="ka-list"><li>Placed 2nd of 4 teams overall (Meta Ads 88 + Google Ads 70 = 158)</li><li>Cut cost per lead by ~69% after fixing Meta Pixel/GTM lead tracking</li><li>Local-area search ads: 3× CTR and a 53% lower CPA than blended</li><li>Blended Google Ads CTR of 6.38% vs a 5% target</li></ul></div>
+        <div class="tl-item"><span class="when">Jan 2021 – Present</span><h3>Freelance Quantitative Research Analyst</h3><span class="org">Self-employed · remote</span><p>~100 research projects handled end to end, delivered in 5–7 working days on average. Regression and SEM in SPSS, SmartPLS, AMOS and LISREL, turned into clear reports; ~40% of client studies published in journals.</p><p class="ka">Key achievements</p><ul class="ka-list"><li>Completed ~100 research projects</li><li>~40% of client studies published in journals</li><li>Delivered in 5–7 working days on average</li></ul></div>
       </div>
     </div>
   </div>
@@ -597,6 +604,7 @@ dialog::backdrop{background:rgba(20,24,42,.62);backdrop-filter:blur(3px)}
     </div>
     <div class="skills" id="skills-grid"></div>
     <div class="toolsets" id="toolsets"></div>
+    <div class="strengths"><h3>Professional strengths</h3><ul><li>Analytical Thinking</li><li>Data-Driven Decision Making</li><li>Presentation</li><li>Team Leadership</li><li>Collaboration</li><li>Client Communication</li></ul><p><b>Languages:</b> Indonesian (Native) · English (Professional Working Proficiency)</p></div>
   </div>
 </section>
 
@@ -806,6 +814,29 @@ function logo(k,size){
 }
 const CATS = {paid:"Paid Ads",analytics:"Analytics",social:"Social Media",seo:"SEO & Web",crm:"CRM",strategy:"Media Plan"};
 
+const STRAT={
+"kl-lp":["Keep one page focused on one action: put the offer and sign-up form above the fold, then answer objections in order (pain points, USPs, packages, FAQ). Make every conversion measurable before any traffic arrives, and keep improving the page while ads are live.","AI-assisted web build (Kiro, GitHub), conversion-focused page structure, event tracking with GTM, GA4 and Meta Pixel, and live landing-page optimisation."],
+"kl-metaplan":["Plan backwards from the business goal: model the funnel from impressions down to subscribers, then build a structure that separates cold prospecting from remarketing so each audience gets the right message. Use competitor ads to find gaps, and set clear rules for when to optimise or switch off.","Full-funnel Meta Ads planning, persona and lookalike audience design, campaign naming and UTM structure, reverse-funnel modelling, competitor ad research and optimisation rules."],
+"kl-meta":["Test three audience strategies (cold interest, Broad and Instagram engagers) with video and single-image creatives, then move budget to the combination that produces leads. When the data looks wrong, fix the tracking before judging the ads.","Audience and creative testing, conversion tracking (Meta Pixel, GTM, GA4), tracking debugging, daily budget optimisation and data-driven reporting."],
+"kl-google":["Split the account into a Traffic and a Conversion campaign, validate tracking end to end before any spend, then follow the data: back the local-area ad groups that convert, expand keywords and tighten bids.","Search campaign structure, keyword and match-type management, conversion tracking, budget reallocation and performance reporting, backed by the Google Ads Search Certification."],
+"kl-organic":["Work backwards from the lead target to the reach and content needed, position the brand on the gap competitors leave open (a fixed monthly price), and build checkpoints around the weakest assumption.","Competitor social audit, positioning, reverse-funnel modelling, content pillar and calendar planning, and scenario analysis."],
+"kl-content":["One message, two formats: an educational carousel and a short Reel built on the same clothing-care insight, each with a hook that passes the 3-second test and a CTA that asks for the next small step.","Content briefing, carousel storyboarding, AIDA video scripting, hook testing and CTA writing."],
+"kl-kol":["Borrow hyperlocal audiences instead of buying reach: choose creators by verified engagement rate, not follower count, and pay through barter plus pay-per-lead so cost follows results.","KOL due diligence, engagement-rate benchmarking, creator briefing, barter and affiliate deal design, and UTM attribution."],
+"kl-seo":["Pick a keyword the new domain can realistically win and answer the question competitors skip: when is a subscription cheaper than paying per kg? Use AI for speed, then rewrite and fact-check by hand.","Keyword research, search intent mapping, content briefing, on-page and technical SEO, AI-assisted writing with human fact-checking, and UTM tracking."],
+"kl-crm":["Put the strongest campaigns at the riskiest moments of a subscription, the first month and the days before renewal, using lifecycle stages and RFM segments so every customer gets one clear next message.","Tracking plan design, lifecycle staging, RFM segmentation, trigger-based flows, referral program design, and email and push in Mailchimp and Knock."],
+"risingstar":["Compare every ad set like-for-like, find where budget leaks, and move it to proven ad sets without adding spend, using a Start / Continue / Stop score for each one.","Meta Ads auditing, CPL/CTR/CVR diagnostics, funnel analysis and budget reallocation modelling in Excel."],
+"3second":["Audit first: judge every keyword against the account's own cost per conversion. Then build the new account by search intent, with budget weighted towards the campaigns closest to purchase.","Search Ads auditing, keyword scoring, intent-based account structure, Responsive Search Ads writing and budget planning."],
+"muda":["Use each marketplace for what it does best: TikTok builds demand, Shopee converts. Organise the quarter around monthly drops so ads, creators and content all point to the same moment.","Marketplace ads strategy (TikTok Shop, Shopee), competitor auditing, campaign calendar design, creator mix and content briefs, and ROAS-based forecasting."],
+"ga4":["Consolidate every platform into one sheet, then diagnose each channel from the top KPI down to its cause, so the budget recommendation rests on Fact → Meaning → Action.","Data cleaning and pivoting, KPI tree diagnosis, multi-channel performance analysis, Looker Studio blended reports and executive insight writing."],
+"ecom":["Judge each channel by return, not by spend, then model a channel mix that reaches the revenue target while keeping every channel below half of the budget.","Channel efficiency metrics (CPM, CPC, CPO, CTR, CVR, ROAS), paid vs organic analysis and budget scenario modelling."],
+"zalora":["Start from what the live site already sends, define KPIs from search to purchase, and build a tracking container ready for QA, so the funnel can be read end to end.","Measurement planning, GA4 dataLayer research, GTM tags, triggers and variables, and funnel and UX diagnosis."],
+"goodday":["Lead the launch with brand-owned content and a UGC challenge instead of paid talent, grounded in the brand's real audience data, and test two hero carousel versions.","Social media campaign planning, audience research, content development (Context, Hook, SEO, CTA), UGC mechanics and creator briefing."],
+"aice":["Benchmark like-for-like across brands and platforms, look past viral outliers to the typical post, and turn the lessons into a Start / Stop / Continue plan.","Social media auditing, engagement-rate benchmarking, mean vs median analysis and competitive insight writing."],
+"timezone":["Turn existing search demand into outlet visits: validate real queries, fix the pages that should rank, and rank next steps by impact divided by effort.","Search intent mapping, on-page and technical SEO auditing, Core Web Vitals analysis, AI-assisted metadata writing with fact-checking, and roadmap prioritisation."],
+"shopeefood":["Win on relevance and timing, not on the biggest discount: nudge users at their favourite restaurant before the habit breaks, with a tiered offer that grows only if they stay inactive.","Event and user-property design, churn definition, lifecycle segmentation, trigger-based automation, A/B testing with control groups and CRM measurement."],
+"mamasuka":["Turn the product insight into a dare, phase the launch from tease to proof to conversion, and check that the plan still reaches both goals in a bad case.","Full-funnel media planning, budget split by funnel stage, behavioural audience targeting and scenario planning."]
+};
+
 const DRIVE=id=>`https://drive.google.com/file/d/${id}/view`;
 const PDF={casestudy:"118TLDmCccaJovu9aeNN2cr75Nt_oMlhq",meta:"1xE2hhdg6rWWbM3sZnUg3q5-SJWyx23uY",social90:"1XVWJdN93IzG7H48gNDFM2WyeOrKT5ecq",content:"1w-ZA4ShVaWu6BxeGeUgx6ahkkvO4Kfgr",kol:"1q6qjYZXTwCKMpAYt81RsMMnIeIuC63CF",seo:"1j27dCe1eA9iqeKlwhpua6klw1Mbbmn1M",crm:"1w0mqwyPlzsWWU--0ib4GdGZeZEF8fuCX",risingstar:"1IwkF-DXQq8Rn0KAOEDVKt0UnZ-0swgCZ",threesecond:"10IGdWP5MunJBRSM4i7qYMBbGmRix166S",muda:"1g2NBIevrmOoM4eHp26VrXftE7g1SDuu6",w4adv:"1GgOjTB3TlXHtlI5BI6WAVqofrEmnbCIz",w4int:"1koFFStdaeH8saTawqM4SDNg1tyUyQEB5",mpa:"1ySYMgkYiMuDk88nqzV2ETNKstn9ZxHo3",zalora:"1Sh34gMI1P94bGd-h_MLOhAtNrP7Vxta_",goodday:"1ybr5rDXbOBTWrZQxQhd6VFgxDQPe2Hr0",aice:"1OkXUEfb_LhWlZnID9Vo9W6Dfzu5QM__M",timezone:"1fcbSwXD4tTK1TS6wBV-b6Cs6Omb5D7M3",comeback:"1cYLr1tWK3JjQYGUDr0i63NSiuE85GSdS",mamasuka:"1XVRDYiqSyUR8pEoCAEgxlfltnhzSeJq5"};
 const P = [
@@ -1006,9 +1037,11 @@ function openP(id){
     <p class="eyebrow">${esc(p.brand)} · ${CATS[p.cat]}</p>
     <h2 id="mTitle">${esc(p.title)}</h2>
     <div class="meta-row"><span>${esc(p.date)}</span><span>Role: ${esc(p.role)}</span>${p.presented?`<span>★ Presented ${esc(p.presented)}</span>`:""}</div>
-    <div class="m-block"><h4>Objective</h4><p>${esc(p.obj)}</p></div>
+    <div class="m-block"><h4>Project goal</h4><p>${esc(p.obj)}</p></div>
+    ${STRAT[p.id]?`<div class="m-block"><h4>Strategy</h4><p>${esc(STRAT[p.id][0])}</p></div>`:""}
     <div class="m-block"><h4>Scope of work</h4><ul>${p.scope.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>
     <div class="m-block"><h4>Results</h4><div class="results">${p.res.map(r=>`<div class="res"><b>${esc(r[0])}</b><span>${esc(r[1])}</span></div>`).join("")}</div></div>
+    ${STRAT[p.id]?`<div class="m-block"><h4>Skill result</h4><p>${esc(STRAT[p.id][1])}</p></div>`:""}
     ${p.ach?`<div class="achieve"><span class="medal">2nd</span><span><b>Achievement</b><br>${esc(p.ach)}</span></div>`:""}
     <div class="m-block"><h4>Tools</h4><div class="m-tools">${p.tools.map(t=>`<span>${logo(t)}${esc(T[t][0])}</span>`).join("")}</div></div>
     ${p.note?`<p style="font-size:14px;color:var(--muted)">${esc(p.note)}</p>`:""}
